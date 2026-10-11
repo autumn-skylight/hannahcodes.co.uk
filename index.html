@@ -4,154 +4,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <title>hannah codes</title>
-  <link rel="icon" href="https://assets.hannahcodes.co.uk/images/home_pics/hc-with-bg-v2.ico">
+  <meta name="description"
+    content="Hannah is a young carer and web developer. Take a look at her latest projects and learn more about her work.">
+  <meta name="theme-color" content="#1c1524">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/portfolio-home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Hannah Codes | Web Developer &amp; Creative</title>
+  <link rel="icon" href="assets/images/home_pics/hc-with-bg-v2.ico">
 </head>
 
-<body>
-  <nav>
-    <div class="logo">
-      <picture>
-        <source srcset="https://assets.hannahcodes.co.uk/images/home_pics/hc-without-bg-v2.PNG"
-          media="(prefers-color-scheme: dark)">
-        <img src="https://assets.hannahcodes.co.uk/images/home_pics/light-hc-without-bg-v2.png">
-      </picture>
-    </div>
-    <div class="hamburger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-    <ul class="nav-links">
+<body class="portfolio-home">
+  <a class="skip-link" href="#projects">Skip to selected work</a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="logo" href="index.html" aria-label="Hannah Codes home">
+      Hannah Codes<span class="accent-dot">.</span>
+    </a>
+    <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="site-navigation">
+      <span class="menu-label">Menu</span>
+      <span class="menu-icon" aria-hidden="true">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </span>
+    </button>
+    <ul class="nav-links" id="site-navigation">
       <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="about/about.html">about</a></li>
-      <li><a href="projects/projects.html">projects</a></li>
-      </div>
+      <li><a href="about/about.html">About</a></li>
+      <li><a href="projects/projects.html">Projects</a></li>
     </ul>
   </nav>
-  <img class="index_header_bg" alt=""
-    src="https://assets.hannahcodes.co.uk/images/home_pics/drew-beamer-vAij-E26haI-unsplash.jpg" draggable="false" />
-  <h1 class="index_header_h1"> Hello, My name is hannah</h1>
-  <h2 class="index_header_welcome_text"> young carer and Web Developer</h2>
 
-
-  <section class="index_about_section">
-    <h1 class="index_about_h1"> About Me</h1>
-    <div class="index_holder">
-      <div class="index_box-set">
-        <div class="index_box-set__knight"><img class="index_box-set__knight-image"
-            src="https://assets.hannahcodes.co.uk/images/home_pics/IMG_7063.JPG" alt="knight icon" /></div>
-        <div class="index_box-set__header">
-          <span>Hello welcome to my digital portfolio, my name is Hannah, <br>
-            -I am a young carer<br>
-            -I am also a web developer and an ex Youtuber</span>
-
+  <main id="home">
+    <section class="intro-hero" aria-labelledby="home-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE CORNER OF THE INTERNET</p>
+        <h1 id="home-title">Hello, I'm<br>Hannah<span class="accent-dot">.</span></h1>
+        <p class="hero-description">Young carer, web developer, and curious mind making thoughtful things for the web.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="about/about.html">A little about me <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="index_about_text_placement">
-          <h2 class="index_about_text_h2">you can found out more about me </h2>
-          <div class="index_about_link_placement">
-            <a href="about/about.html" class="index_about_link">here</a>
+      </div>
+      <div class="hero-art" aria-label="A portrait of Hannah">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="portrait-frame">
+          <img src="assets/images/home_pics/me.jpeg" alt="Hannah smiling">
+        </div>
+        <div class="portrait-stamp">
+          <span class="stamp-mark" aria-hidden="true">H.</span>
+          <span class="stamp-caption">MAKING<br>IT HAPPEN</span>
+        </div>
+        <span class="art-spark spark-one" aria-hidden="true">✳</span>
+        <span class="art-spark spark-two" aria-hidden="true">✳</span>
+        <span class="art-caption">DESIGN · CODE · CURIOSITY</span>
+      </div>
+      <div class="hero-footnote"><span>INDEPENDENTLY MADE</span><span>01 — 03</span></div>
+    </section>
+
+    <section class="work-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A FEW THINGS I'VE MADE</p>
+          <h2 id="projects-title">Selected work<span class="accent-dot">.</span></h2>
+        </div>
+        <p class="section-note">Small ideas, built with care.<br>More adventures await.</p>
+      </div>
+
+      <a class="featured-project project-card" href="https://dev.hannahcodes.co.uk">
+        <div class="project-image">
+          <img src="assets/images/projects/hc-v13.jpg" alt="Preview of the Hannah Codes portfolio website">
+          <span class="project-number">01</span>
+        </div>
+        <div class="project-copy">
+          <div class="project-meta"><span>WEB DESIGN</span><span>PERSONAL PROJECT</span></div>
+          <h3>My little corner<br>of the web</h3>
+          <p>A home for the things I make, the things I learn, and everything in between.</p>
+          <span class="project-link">Visit the site <span aria-hidden="true">↗</span></span>
+        </div>
+      </a>
+
+      <div class="project-grid">
+        <a class="project-card compact-project" href="https://codescape.hannahcodes.co.uk">
+          <div class="project-image">
+            <img src="assets/images/projects/codescape.jpg" alt="Preview of the CodeScape project">
+            <span class="project-number">02</span>
           </div>
-
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
-
-  <section class="index_card_section">
-    <h1> My latest Projects, i've been working on</h1>
-    <div class="index_card_band">
-      <div class="item-5">
-        <div class="index_card index_card_a">
-          <div class="index_card_thumb_2"
-            style="background-image: url(https://assets.hannahcodes.co.uk/images/projects/hc-v13.jpg);"></div>
-          <article class="index_card_article">
-            <div class="index_card_links_placement">
-              <div class="index_card_link_placement"><a href="https://dev.hannahcodes.co.uk" class="index_card_links">
-                  dev.hannahcodes.co.uk</a> <svg class="index_card_link_svg" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                  <path
-                    d="M384 320c-17.67 0-32 14.33-32 32v96H64V160h96c17.67 0 32-14.32 32-32s-14.33-32-32-32L64 96c-35.35 0-64 28.65-64 64V448c0 35.34 28.65 64 64 64h288c35.35 0 64-28.66 64-64v-96C416 334.3 401.7 320 384 320zM488 0H352c-12.94 0-24.62 7.797-29.56 19.75c-4.969 11.97-2.219 25.72 6.938 34.88L370.8 96L169.4 297.4c-12.5 12.5-12.5 32.75 0 45.25C175.6 348.9 183.8 352 192 352s16.38-3.125 22.62-9.375L416 141.3l41.38 41.38c9.156 9.141 22.88 11.84 34.88 6.938C504.2 184.6 512 172.9 512 160V24C512 10.74 501.3 0 488 0z" />
-                </svg> </div>
-            </div>
-            <br>
-            <p class="index_card_discription_text"> a digital portfolio</p>
-            <div class="index_card_links_placement">
-              <div class="index_card_link_placement"><svg class="index_card_source_code_svg"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path
-                    d="M160 80C160 112.8 140.3 140.1 112 153.3V241.1C130.8 230.2 152.7 224 176 224H272C307.3 224 336 195.3 336 160V153.3C307.7 140.1 288 112.8 288 80C288 35.82 323.8 0 368 0C412.2 0 448 35.82 448 80C448 112.8 428.3 140.1 400 153.3V160C400 230.7 342.7 288 272 288H176C140.7 288 112 316.7 112 352V358.7C140.3 371 160 399.2 160 432C160 476.2 124.2 512 80 512C35.82 512 0 476.2 0 432C0 399.2 19.75 371 48 358.7V153.3C19.75 140.1 0 112.8 0 80C0 35.82 35.82 0 80 0C124.2 0 160 35.82 160 80V80zM80 104C93.25 104 104 93.25 104 80C104 66.75 93.25 56 80 56C66.75 56 56 66.75 56 80C56 93.25 66.75 104 80 104zM368 56C354.7 56 344 66.75 344 80C344 93.25 354.7 104 368 104C381.3 104 392 93.25 392 80C392 66.75 381.3 56 368 56zM80 456C93.25 456 104 445.3 104 432C104 418.7 93.25 408 80 408C66.75 408 56 418.7 56 432C56 445.3 66.75 456 80 456z" />
-                </svg>
-                <a href="https://github.com/autumn-skylight/hannahcodes.co.uk/tree/Dev"
-                  class="index_card_source_code_links">source code</a>
-              </div>
-            </div>
-
-          </article>
-        </div>
-      </div>
-      <div class="item-7">
-        <div class="index_card index_card_a">
-          <div class="index_card_thumb"
-            style="background-image: url(https://assets.hannahcodes.co.uk/images/projects/codescape.jpg);"></div>
-          <article class="index_card_article">
-            <h1 class="index_card_text"> codescape-app (dev)</h1>
-            <br>
-            <p class="index_card_discription_text"> a design platform for designers and developers</p>
-            <div class="index_card_links_placement">
-              <div class="index_card_link_placement"><svg class="index_card_source_code_svg"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path
-                    d="M160 80C160 112.8 140.3 140.1 112 153.3V241.1C130.8 230.2 152.7 224 176 224H272C307.3 224 336 195.3 336 160V153.3C307.7 140.1 288 112.8 288 80C288 35.82 323.8 0 368 0C412.2 0 448 35.82 448 80C448 112.8 428.3 140.1 400 153.3V160C400 230.7 342.7 288 272 288H176C140.7 288 112 316.7 112 352V358.7C140.3 371 160 399.2 160 432C160 476.2 124.2 512 80 512C35.82 512 0 476.2 0 432C0 399.2 19.75 371 48 358.7V153.3C19.75 140.1 0 112.8 0 80C0 35.82 35.82 0 80 0C124.2 0 160 35.82 160 80V80zM80 104C93.25 104 104 93.25 104 80C104 66.75 93.25 56 80 56C66.75 56 56 66.75 56 80C56 93.25 66.75 104 80 104zM368 56C354.7 56 344 66.75 344 80C344 93.25 354.7 104 368 104C381.3 104 392 93.25 392 80C392 66.75 381.3 56 368 56zM80 456C93.25 456 104 445.3 104 432C104 418.7 93.25 408 80 408C66.75 408 56 418.7 56 432C56 445.3 66.75 456 80 456z" />
-                </svg>
-                <a href="https://github.com/autumn-skylight/codescape-app" class="index_card_source_code_links">source
-                  code</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="item-7">
-        <div class="index_card index_card_a">
-          <div class="index_card_thumb_2"
-            style="background-image: url(https://assets.hannahcodes.co.uk/images/projects/hc-project-html.jpg);">
+          <div class="project-copy">
+            <div class="project-meta"><span>IN DEVELOPMENT</span><span>CREATIVE TOOLS</span></div>
+            <h3>CodeScape</h3>
+            <p>A design platform for designers and developers.</p>
+            <span class="project-link">Explore CodeScape <span aria-hidden="true">↗</span></span>
           </div>
-          <article class="index_card_article">
-            <h1 class="index_card_text"> View more of my projects here</h1>
-            <div class="index_card_links_placement">
-              <div class="index_card_link_placement"><svg class="index_card_project_link_svg"
-                  xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" />
-                </svg>
-                <a href="projects/projects.html" class="index_card_links">view more</a>
-              </div>
-
-            </div>
-          </article>
-        </div>
+        </a>
+        <a class="project-card compact-project" href="projects/projects.html">
+          <div class="project-image">
+            <img src="assets/images/projects/hc-project-html.jpg" alt="A collection of Hannah's web projects">
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-copy">
+            <div class="project-meta"><span>MORE TO EXPLORE</span><span>PROJECT ARCHIVE</span></div>
+            <h3>And there's more</h3>
+            <p>See what else I've been making lately.</p>
+            <span class="project-link">Browse all projects <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <footer>
-    <div class="footer_display">
-      <div class="footer_logo">
-        <picture>
-          <source srcset="https://assets.hannahcodes.co.uk/images/home_pics/hc-without-bg-v2.PNG"
-            media="(prefers-color-scheme: dark)">
-          <img src="https://assets.hannahcodes.co.uk/images/home_pics/light-hc-without-bg-v2.png">
-        </picture>
+    <section class="about-section" aria-labelledby="about-title">
+      <div class="about-marker" aria-hidden="true">A BIT ABOUT ME</div>
+      <div class="about-copy">
+        <p class="eyebrow">THE PERSON BEHIND THE PIXELS</p>
+        <h2 id="about-title">People first.<br>Curiosity always<span class="accent-dot">.</span></h2>
+        <p>I'm Hannah — a young carer and web developer who loves learning how things work and bringing ideas to life
+          online. This is where I share what I'm building along the way.</p>
+        <a class="text-link" href="about/about.html">Get to know me <span aria-hidden="true">↗</span></a>
       </div>
-      <p class="desktop">copyright hannah 2025</p>
-      <a href="mailto:hannah@hannahcodes.co.uk">contact me</a>
-      <a href="https://changelog-dev.hannahcodes.co.uk/index.html">view changelog</a>
-      <p class="mobile">copyright hannah 2025</p>
+      <div class="about-aside">
+        <span class="aside-symbol" aria-hidden="true">✳</span>
+        <p>“Make room<br>to be you.”</p>
+        <span class="aside-caption">HANNAH CODES · ANDOVER, UK</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="home-footer">
+    <a class="footer-brand" href="#home-title">Hannah Codes<span class="accent-dot">.</span></a>
+    <p>Made with care by Hannah · 2026</p>
+    <div class="footer-links">
+      <a href="mailto:hannah@hannahcodes.co.uk">Say hello</a>
+      <a href="https://changelog.hannahcodes.co.uk/index.html">Changelog</a>
     </div>
   </footer>
   <script src="assets/js/nav.js"></script>

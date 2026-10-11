@@ -4,194 +4,230 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <title>hannah codes</title>
-  <link rel="icon" href="https://assets.hannahcodes.co.uk/images/home_pics/hc-with-bg-v2.ico">
+  <meta name="description" content="Get to know Hannah: a young carer, web developer, and creative from Andover.">
+  <meta name="theme-color" content="#1c1524">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/portfolio-home.css">
+  <link rel="stylesheet" href="../assets/css/about-page.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>About Hannah | Hannah Codes</title>
+  <link rel="icon" href="../assets/images/home_pics/hc-with-bg-v2.ico">
 </head>
 
-<body>
-  <nav>
-    <div class="logo">
-      <picture>
-        <source srcset="https://assets.hannahcodes.co.uk/images/home_pics/hc-without-bg-v2.PNG"
-          media="(prefers-color-scheme: dark)">
-        <img src="https://assets.hannahcodes.co.uk/images/home_pics/light-hc-without-bg-v2.png">
-      </picture>
-    </div>
-    <div class="hamburger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-    <ul class="nav-links">
+<body class="portfolio-home portfolio-about">
+  <a class="skip-link" href="#about-content">Skip to about Hannah</a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="logo" href="../index.html" aria-label="Hannah Codes home">Hannah Codes<span
+        class="accent-dot">.</span></a>
+    <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="site-navigation">
+      <span class="menu-label">Menu</span>
+      <span class="menu-icon" aria-hidden="true">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </span>
+    </button>
+    <ul class="nav-links" id="site-navigation">
       <li><a href="../index.html">Home</a></li>
-      <li><a class="active" href="../about/about.html">about</a></li>
-      <li><a href="../projects/projects.html">projects</a></li>
-      </div>
+      <li><a class="active" href="about.html">About</a></li>
+      <li><a href="../projects/projects.html">Projects</a></li>
     </ul>
   </nav>
-  <img class="about_header_bg" alt="" src="https://assets.hannahcodes.co.uk/images/about_pics/south_pride.jpg"
-    draggable="false" />
-  <h1 class="about_header_h1"> About Me</h1>
 
-  <section class="about_about_section">
-    <h1 class="about_about_h1"> Who am I</h1>
-    <div class="holder">
-      <div class="box-set">
-        <div class="box-set__knight"><img class="box-set__knight-image"
-            src="https://assets.hannahcodes.co.uk/images/home_pics/IMG_7063.JPG" alt="" /></div>
-        <div class="box-set__header">
-          <span>Hello welcome, my name is Hannah, I am a 23 year old transgender female from andover.
-            I am a carer who's been caring for a few years now,
-            also I am a web developer who's been learning to code for over 2 years,
-            and I am an ex Youtuber who used to run a channel about gaming</span>
-          </h1>
+  <main id="about-content">
+    <section class="about-hero" aria-labelledby="about-title">
+      <div class="about-hero-copy">
+        <p class="eyebrow">THE PERSON BEHIND THE PIXELS</p>
+        <h1 id="about-title">A little<br>about me<span class="accent-dot">.</span></h1>
+        <p class="about-intro">I'm Hannah — a young carer, web developer, and curious mind from Andover.</p>
+        <a class="about-hero-link" href="#my-story">Get to know me <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="about-portrait" aria-label="Portrait of Hannah">
+        <div class="portrait-orbit"></div>
+        <div class="portrait-image">
+          <img src="../assets/images/home_pics/me.jpeg" alt="Hannah smiling">
         </div>
+        <span class="portrait-spark" aria-hidden="true">✳</span>
+        <div class="portrait-note"><span>H.</span><small>HELLO,<br>IT'S ME</small></div>
       </div>
-    </div>
-  </section>
-  <section class="about_hobbies_section">
-    <button class="hobbies_section_accordion">my hobbies & interest</button>
-    <div class="hobbies_section_panel">
-      <h1 class="about_hobbies_h1"> What i like to do in my free time</h1>
-      <p class="about_hobbies_p"> In my free time <br>I like to
-        code, you can view all my projects <a href="../projects/projects.html">here</a>, <br>I also like to play video
-        games, watch videos and listen to music.
-      </p>
-      <h1 class="about_hobbies_h1_intrest"> My interest</h1>
-      <p class="about_hobbies_p">
-        I am very interested in computer Technology <br>with a particular interest in programing, also I am into
-        photography and fashion </p>
-    </div>
-  </section>
-  <section class="about_edu_work_section">
-    <button class="work_section_accordion">Education & Employment History</button>
-    <div class="work_section_panel">
-      <h2 class="about_education_h2"> Education</h2>
-      <p class="about_education_school_p">
-        -<strong>Norman gate school </strong>: September 2005 - July 2012 <br>
-        -<strong> The Mark way School </strong>: September 2012 - 30th June 2017 <br>
-      </p>
-      <button class="school_qualification_accordion">qualifications i have gained while at school</button>
-      <div class="school_qualification_panel">
-        <table class="school_qualification_table">
-          <tr>
-            <td>GCSE Art: E</td>
-            <td>GCSE Maths: 1</td>
-            <td>GCSE Food Tech: E / BETC Pass</td>
-          </tr>
-          <tr>
-            <td>GCSE Design Tech: D</td>
-            <td>GCSE Religious Studies: E</td>
-            <td>GCSE Citizenship: E</td>
-          </tr>
-          <tr>
-            <td>CIDA Level 1 ICT: Pass (grade C)</td>
-            <td>Sports Leaders Award L1 ACHIVED</td>
-            <td>BTEC L1 Maths: Pass</td>
-          </tr>
-          <tr>
-            <td>BTEC Science Level 1 PASS</td>
-            <td>BTEC Cooking Skills L1 AWARD</td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
-      <p class="about_education_college_p">
-        -<strong>Andover College </strong>: 13th September 2017 - 1st July 2022
-      </p>
-      <button class="college_qualification_accordion">qualifications i have gained while at College</button>
-      <div class="college_qualification_panel">
-        <table class="college_qualification_table">
-          <tr>
-            <td>may 2018</td> <!------top of each <td> is 2018-->
-            <td>may 2019</td> <!------2nd row of each <td> is 2019-->
-            <td>may 2020</td> <!------3nd row of each <td> is 2020-->
-            <td>may 2021</td> <!------4nd row of each <td> is 2021-->
-            <td>2022</td> <!------5nd row of each <td> is 2022-->
-          </tr>
-          <tr>
-            <td>BTEC IT User</td>
-            <td>GCSE photography: 3</td>
-            <td>GCSE English :3</td>
-            <td>GCSE Maths: 3</td>
-            <td>GCSE Maths: 2</td>
-          </tr>
-          <tr>
-            <td>BTEC Vocational Studies</td>
-            <td>BTEC L2 IT: Pass</td>
-            <td>GCSE english: 3</td>
-            <td>BETC L3 Creative media: Pass</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>BTEC Work Skills</td>
-            <td>Functional Skills L1 Maths: pass</td>
-            <td>BETC L3 Creative media: Merit</td>
-            <td>BETC L3 IT: Pass</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>C+G Functional English: Pass</td>
-            <td>Functional Skills L1 English: pass</td>
-            <td>BETC L3 IT: Pass</td>
-            <td>GCSE English :4</td>
-            <td></td>
+      <div class="hero-footnote"><span>CURIOUS BY NATURE</span><span>ABOUT HANNAH</span></div>
+    </section>
 
-          </tr>
-          <tr>
-            <td>C+G Functional Maths: Pass</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
+    <section class="story-section" id="my-story" aria-labelledby="story-title">
+      <div class="section-marker">01 / MY STORY</div>
+      <div class="story-content">
+        <p class="eyebrow">A HUMAN BEFORE A JOB TITLE</p>
+        <h2 id="story-title">People first.<br>Curiosity always<span class="accent-dot">.</span></h2>
+        <p class="story-paragraph">I'm a transgender woman, a young carer, and a web developer who's been learning to
+          code for several years. I love finding out how things work, then using what I've learned to make something of
+          my own.</p>
+        <p class="story-paragraph">I used to run a gaming YouTube channel, and these days you'll usually find me coding,
+          playing games, watching videos, or listening to music. I'm also interested in photography, fashion, and all
+          things computer technology.</p>
+        <a class="text-link" href="../projects/projects.html">See what I'm building <span
+            aria-hidden="true">↗</span></a>
       </div>
-      <h2 class="about_work_experience_h2">Work experience </h2>
-      <p class="about_work_experience_p">
-        - <strong>The Range Andover </strong>: October 2017 - December 2017 <br>
-        - <strong>Cameo & Vinyl Andover </strong>: 6th April 2019 - 23rd October 2021 <br>
-      </p>
-      <button class="cameo_qualification_accordion">qualifications i have gained while at Cameo & Vinyl</button>
-      <div class="cameo_qualification_panel">
-        <table class="cameo_qualification_table">
-          <tr>
-            <td>CPL online- equality & diversity</td>
-            <td>CPL online- ALPS (award for licensed premises staff)</td>
-            <td>CPL online- health & safety</td>
-          </tr>
-          <tr>
-            <td>CPL online- emergency first aid awareness</td>
-            <td>CPL online- fire awareness</td>
-            <td></td>
-          </tr>
-        </table>
+      <aside class="story-aside">
+        <span class="aside-symbol" aria-hidden="true">✳</span>
+        <p>Make room<br>to be you.</p>
+        <span class="aside-caption">A LITTLE REMINDER</span>
+      </aside>
+    </section>
+
+    <section class="interests-section" aria-labelledby="interests-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHEN I'M NOT AT MY KEYBOARD</p>
+          <h2 id="interests-title">Things I love<span class="accent-dot">.</span></h2>
+        </div>
+        <p class="section-note">A few of the things that<br>keep me inspired.</p>
       </div>
-      <p class="about_work_experience_p_2">
-        - <strong>Andover Young Carers (volunteering)</strong>: until March 2020 <br>
-        - <strong>B&M Andover</strong>: 4th November 2020 - 21st August 2022 <br>
-        - <strong>HCC</strong>: 1st november 2021 - 15th May 2023
-      </p>
-    </div>
-  </section>
-
-
-
-  <footer>
-    <div class="footer_display">
-      <div class="footer_logo">
-        <picture>
-          <source srcset="https://assets.hannahcodes.co.uk/images/home_pics/hc-without-bg-v2.PNG"
-            media="(prefers-color-scheme: dark)">
-          <img src="https://assets.hannahcodes.co.uk/images/home_pics/light-hc-without-bg-v2.png">
-        </picture>
+      <div class="interest-grid">
+        <article class="interest-card">
+          <span class="interest-number">01</span>
+          <span class="interest-symbol" aria-hidden="true">&lt;/&gt;</span>
+          <h3>Making for the web</h3>
+          <p>I enjoy learning new skills and turning ideas into websites and digital projects.</p>
+          <a href="../projects/projects.html">Explore my projects <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="interest-card">
+          <span class="interest-number">02</span>
+          <span class="interest-symbol" aria-hidden="true">✳</span>
+          <h3>Creative life</h3>
+          <p>Photography and fashion let me look at the world from a different angle.</p>
+        </article>
+        <article class="interest-card">
+          <span class="interest-number">03</span>
+          <span class="interest-symbol" aria-hidden="true">♫</span>
+          <h3>Recharge time</h3>
+          <p>Games, videos, and music are a few of my favourite ways to unwind.</p>
+        </article>
       </div>
-      <p class="desktop">copyright hannah 2025</p>
-      <a href="mailto:hannah@hannahcodes.co.uk">contact me</a>
-      <a href="https://changelog-dev.hannahcodes.co.uk/index.html">view changelog</a>
-      <p class="mobile">copyright hannah 2025</p>
+    </section>
+
+    <section class="journey-section" aria-labelledby="journey-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A FEW IMPORTANT MILESTONES</p>
+          <h2 id="journey-title">My journey<span class="accent-dot">.</span></h2>
+        </div>
+        <p class="section-note">Education, experience,<br>and the things I've learned.</p>
+      </div>
+      <div class="journey-list">
+        <article class="journey-item">
+          <div class="journey-date">2005 — 2017</div>
+          <div class="journey-detail">
+            <span class="journey-type">EDUCATION</span>
+            <h3>Norman Gate &amp; The Mark Way School</h3>
+            <p>My school years, from 2005 through to 2017.</p>
+            <details class="qualification-details">
+              <summary>View school qualifications <span aria-hidden="true">＋</span></summary>
+              <ul class="qualification-list">
+                <li>GCSE Art: E</li>
+                <li>GCSE Maths: 1</li>
+                <li>GCSE Food Tech: E / BTEC Pass</li>
+                <li>GCSE Design Tech: D</li>
+                <li>GCSE Religious Studies: E</li>
+                <li>GCSE Citizenship: E</li>
+                <li>CIDA Level 1 ICT: Pass (grade C)</li>
+                <li>Sports Leaders Award L1</li>
+                <li>BTEC Level 1 Maths: Pass</li>
+                <li>BTEC Science Level 1: Pass</li>
+                <li>BTEC Cooking Skills Level 1: Award</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+        <article class="journey-item">
+          <div class="journey-date">2017 — 2022</div>
+          <div class="journey-detail">
+            <span class="journey-type">EDUCATION</span>
+            <h3>Andover College</h3>
+            <p>Studied at Andover College from September 2017 to July 2022.</p>
+            <details class="qualification-details">
+              <summary>View college qualifications <span aria-hidden="true">＋</span></summary>
+              <div class="qualification-years">
+                <section>
+                  <h4>2018</h4>
+                  <ul>
+                    <li>BTEC IT User</li>
+                    <li>BTEC Vocational Studies</li>
+                    <li>BTEC Work Skills</li>
+                    <li>C&amp;G Functional English: Pass</li>
+                    <li>C&amp;G Functional Maths: Pass</li>
+                  </ul>
+                </section>
+                <section>
+                  <h4>2019</h4>
+                  <ul>
+                    <li>GCSE Photography: 3</li>
+                    <li>BTEC Level 2 IT: Pass</li>
+                    <li>Functional Skills Level 1 Maths: Pass</li>
+                    <li>Functional Skills Level 1 English: Pass</li>
+                  </ul>
+                </section>
+                <section>
+                  <h4>2020</h4>
+                  <ul>
+                    <li>GCSE English: 3</li>
+                    <li>BTEC Level 3 Creative Media: Merit</li>
+                    <li>BTEC Level 3 IT: Pass</li>
+                  </ul>
+                </section>
+                <section>
+                  <h4>2021</h4>
+                  <ul>
+                    <li>GCSE Maths: 3</li>
+                    <li>BTEC Level 3 Creative Media: Pass</li>
+                    <li>BTEC Level 3 IT: Pass</li>
+                    <li>GCSE English: 4</li>
+                  </ul>
+                </section>
+                <section>
+                  <h4>2022</h4>
+                  <ul>
+                    <li>GCSE Maths: 2</li>
+                  </ul>
+                </section>
+              </div>
+            </details>
+          </div>
+        </article>
+        <article class="journey-item">
+          <div class="journey-date">2017 — 2023</div>
+          <div class="journey-detail">
+            <span class="journey-type">WORK &amp; VOLUNTEERING</span>
+            <h3>Learning through experience</h3>
+            <ul class="experience-list">
+              <li><span>October — December 2017</span>The Range, Andover</li>
+              <li><span>April 2019 — October 2021</span>Cameo &amp; Vinyl, Andover</li>
+              <li><span>Until March 2020</span>Andover Young Carers (volunteering)</li>
+              <li><span>November 2020 — August 2022</span>B&amp;M, Andover</li>
+              <li><span>November 2021 — May 2023</span>HCC</li>
+            </ul>
+            <details class="qualification-details">
+              <summary>View Cameo &amp; Vinyl training <span aria-hidden="true">＋</span></summary>
+              <ul class="qualification-list">
+                <li>CPL Equality &amp; Diversity</li>
+                <li>CPL Award for Licensed Premises Staff (ALPS)</li>
+                <li>CPL Health &amp; Safety</li>
+                <li>CPL Emergency First Aid Awareness</li>
+                <li>CPL Fire Awareness</li>
+              </ul>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="about-footer">
+    <a class="footer-brand" href="../index.html">Hannah Codes<span class="accent-dot">.</span></a>
+    <p>Made with care by Hannah · 2026</p>
+    <div class="footer-links">
+      <a href="mailto:hannah@hannahcodes.co.uk">Say hello</a>
+      <a href="https://changelog.hannahcodes.co.uk/index.html">Changelog</a>
     </div>
   </footer>
   <script src="../assets/js/nav.js"></script>
