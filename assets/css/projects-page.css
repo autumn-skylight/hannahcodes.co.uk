@@ -7,7 +7,11 @@
   overflow: hidden;
   padding: 130px clamp(24px, 8vw, 124px) 82px;
   background:
-    radial-gradient(ellipse at 78% 48%, rgba(123, 61, 116, 0.3), transparent 36%),
+    radial-gradient(
+      ellipse at 78% 48%,
+      rgba(123, 61, 116, 0.3),
+      transparent 36%
+    ),
     linear-gradient(116deg, #17131c 0%, #24162c 56%, #31182c 100%);
 }
 
@@ -25,7 +29,9 @@
   letter-spacing: -0.075em;
   line-height: 0.98;
 }
-
+.arrow {
+  padding-left: 1em;
+}
 .portfolio-projects .projects-intro {
   max-width: 490px;
   margin: 25px 0 0;
@@ -45,7 +51,9 @@
   color: var(--home-ink);
   font-size: 12px;
   font-weight: 600;
-  transition: border-color 160ms ease, color 160ms ease;
+  transition:
+    border-color 160ms ease,
+    color 160ms ease;
 }
 
 .portfolio-projects .projects-hero-link span {
@@ -171,7 +179,11 @@
   margin: 0;
 }
 
-.portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child {
+.portfolio-projects
+  #latest-projects
+  > .projects-section-heading:first-child
+  + .project_card_band
+  > div:first-child {
   grid-column: 1 / -1;
 }
 
@@ -188,7 +200,9 @@
   background: var(--home-panel);
   box-shadow: none;
   color: var(--home-ink);
-  transition: border-color 180ms ease, transform 180ms ease;
+  transition:
+    border-color 180ms ease,
+    transform 180ms ease;
 }
 
 .portfolio-projects .project_card:hover {
@@ -210,30 +224,60 @@
   background-size: cover;
 }
 
-.portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child .project_card {
+.portfolio-projects
+  #latest-projects
+  > .projects-section-heading:first-child
+  + .project_card_band
+  > div:first-child
+  .project_card {
   display: grid;
   min-height: 340px;
   grid-template-columns: 1.15fr 0.85fr;
 }
 
-.portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child .project_card_thumb,
-.portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child .project_card_thumb_2 {
+.portfolio-projects
+  #latest-projects
+  > .projects-section-heading:first-child
+  + .project_card_band
+  > div:first-child
+  .project_card_thumb,
+.portfolio-projects
+  #latest-projects
+  > .projects-section-heading:first-child
+  + .project_card_band
+  > div:first-child
+  .project_card_thumb_2 {
   height: 100%;
   aspect-ratio: auto;
 }
 
-.portfolio-projects .github-project-heading + .project_card_band > div:first-child .project_card {
+.portfolio-projects
+  .github-project-heading
+  + .project_card_band
+  > div:first-child
+  .project_card {
   display: grid;
   min-height: 340px;
   grid-template-columns: 1.15fr 0.85fr;
 }
 
-.portfolio-projects .github-project-heading + .project_card_band > div:first-child {
+.portfolio-projects
+  .github-project-heading
+  + .project_card_band
+  > div:first-child {
   grid-column: 1 / -1;
 }
 
-.portfolio-projects .github-project-heading + .project_card_band > div:first-child .project_card_thumb,
-.portfolio-projects .github-project-heading + .project_card_band > div:first-child .project_card_thumb_2 {
+.portfolio-projects
+  .github-project-heading
+  + .project_card_band
+  > div:first-child
+  .project_card_thumb,
+.portfolio-projects
+  .github-project-heading
+  + .project_card_band
+  > div:first-child
+  .project_card_thumb_2 {
   height: 100%;
   aspect-ratio: auto;
 }
@@ -247,13 +291,22 @@
   padding: 24px 24px 10px;
 }
 
-.portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child article {
+.portfolio-projects
+  #latest-projects
+  > .projects-section-heading:first-child
+  + .project_card_band
+  > div:first-child
+  article {
   justify-content: center;
   gap: 17px;
   padding: clamp(25px, 4vw, 54px) clamp(25px, 4vw, 54px) clamp(12px, 2vw, 20px);
 }
 
-.portfolio-projects .github-project-heading + .project_card_band > div:first-child article {
+.portfolio-projects
+  .github-project-heading
+  + .project_card_band
+  > div:first-child
+  article {
   justify-content: center;
   gap: 17px;
   padding: clamp(25px, 4vw, 54px) clamp(25px, 4vw, 54px) clamp(12px, 2vw, 20px);
@@ -272,7 +325,12 @@
   text-align: left;
 }
 
-.portfolio-projects .projects-section-heading + .project_card_band > div:first-child .project_card_links_placement:first-child a {
+.portfolio-projects
+  .projects-section-heading
+  + .project_card_band
+  > div:first-child
+  .project_card_links_placement:first-child
+  a {
   color: var(--home-ink);
   font-size: clamp(24px, 3.5vw, 38px);
   font-weight: 600;
@@ -280,7 +338,11 @@
   line-height: 1.18;
 }
 
-.portfolio-projects .github-project-heading + .project_card_band > div:first-child .project_card_text {
+.portfolio-projects
+  .github-project-heading
+  + .project_card_band
+  > div:first-child
+  .project_card_text {
   font-size: clamp(24px, 3.5vw, 38px);
   font-weight: 600;
   letter-spacing: -0.05em;
@@ -365,7 +427,10 @@
   margin-top: 88px;
 }
 
-.portfolio-projects .past-project-heading + .project_card_band > div:first-child {
+.portfolio-projects
+  .past-project-heading
+  + .project_card_band
+  > div:first-child {
   grid-column: auto;
 }
 
@@ -520,19 +585,39 @@
     gap: 20px;
   }
 
-  .portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child .project_card {
+  .portfolio-projects
+    #latest-projects
+    > .projects-section-heading:first-child
+    + .project_card_band
+    > div:first-child
+    .project_card {
     min-height: 332px;
   }
 
-  .portfolio-projects .github-project-heading + .project_card_band > div:first-child .project_card {
+  .portfolio-projects
+    .github-project-heading
+    + .project_card_band
+    > div:first-child
+    .project_card {
     min-height: 332px;
   }
 
-  .portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child article {
-    padding: clamp(24px, 4vw, 48px) clamp(24px, 4vw, 48px) clamp(12px, 2vw, 18px);
+  .portfolio-projects
+    #latest-projects
+    > .projects-section-heading:first-child
+    + .project_card_band
+    > div:first-child
+    article {
+    padding: clamp(24px, 4vw, 48px) clamp(24px, 4vw, 48px)
+      clamp(12px, 2vw, 18px);
   }
 
-  .portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child article {
+  .portfolio-projects
+    #latest-projects
+    > .projects-section-heading:first-child
+    + .project_card_band
+    > div:first-child
+    article {
     display: grid;
     grid-template-columns: max-content max-content;
     justify-content: center;
@@ -541,32 +626,66 @@
     row-gap: 17px;
   }
 
-  .portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child article > .project_card_links_placement:first-child {
+  .portfolio-projects
+    #latest-projects
+    > .projects-section-heading:first-child
+    + .project_card_band
+    > div:first-child
+    article
+    > .project_card_links_placement:first-child {
     grid-column: 1 / -1;
   }
 
-  .portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child article > .project_card_links_placement:not(:first-child) {
+  .portfolio-projects
+    #latest-projects
+    > .projects-section-heading:first-child
+    + .project_card_band
+    > div:first-child
+    article
+    > .project_card_links_placement:not(:first-child) {
     width: auto;
   }
 
-  .portfolio-projects .github-project-heading + .project_card_band > div:first-child article {
-    padding: clamp(24px, 4vw, 48px) clamp(24px, 4vw, 48px) clamp(12px, 2vw, 18px);
+  .portfolio-projects
+    .github-project-heading
+    + .project_card_band
+    > div:first-child
+    article {
+    padding: clamp(24px, 4vw, 48px) clamp(24px, 4vw, 48px)
+      clamp(12px, 2vw, 18px);
   }
 
-  .portfolio-projects .projects_section > .project_card_band > div:not(:first-child) .project_card_thumb,
-  .portfolio-projects .projects_section > .project_card_band > div:not(:first-child) .project_card_thumb_2 {
+  .portfolio-projects
+    .projects_section
+    > .project_card_band
+    > div:not(:first-child)
+    .project_card_thumb,
+  .portfolio-projects
+    .projects_section
+    > .project_card_band
+    > div:not(:first-child)
+    .project_card_thumb_2 {
     aspect-ratio: 1.9;
   }
 
-  .portfolio-projects .projects_section > .project_card_band > div:not(:first-child) .project_card article {
+  .portfolio-projects
+    .projects_section
+    > .project_card_band
+    > div:not(:first-child)
+    .project_card
+    article {
     min-height: 145px;
     padding: 24px 24px 10px;
   }
 
-  .portfolio-projects .past-project-heading + .project_card_band > div:first-child .project_card article {
+  .portfolio-projects
+    .past-project-heading
+    + .project_card_band
+    > div:first-child
+    .project_card
+    article {
     padding: 24px 24px 10px;
   }
-
 }
 
 @media (max-width: 900px) {
@@ -663,48 +782,100 @@
     gap: 14px;
   }
 
-  .portfolio-projects .projects-section-heading + .project_card_band > div:first-child {
+  .portfolio-projects
+    .projects-section-heading
+    + .project_card_band
+    > div:first-child {
     grid-column: auto;
   }
 
-  .portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child .project_card {
+  .portfolio-projects
+    #latest-projects
+    > .projects-section-heading:first-child
+    + .project_card_band
+    > div:first-child
+    .project_card {
     display: flex;
     min-height: 0;
   }
 
-  .portfolio-projects .github-project-heading + .project_card_band > div:first-child .project_card {
+  .portfolio-projects
+    .github-project-heading
+    + .project_card_band
+    > div:first-child
+    .project_card {
     display: flex;
     min-height: 0;
   }
 
-  .portfolio-projects .github-project-heading + .project_card_band > div:first-child {
+  .portfolio-projects
+    .github-project-heading
+    + .project_card_band
+    > div:first-child {
     grid-column: auto;
   }
 
-  .portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child .project_card_thumb,
-  .portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child .project_card_thumb_2 {
+  .portfolio-projects
+    #latest-projects
+    > .projects-section-heading:first-child
+    + .project_card_band
+    > div:first-child
+    .project_card_thumb,
+  .portfolio-projects
+    #latest-projects
+    > .projects-section-heading:first-child
+    + .project_card_band
+    > div:first-child
+    .project_card_thumb_2 {
     min-height: 0;
     aspect-ratio: 1.5;
   }
 
-  .portfolio-projects .github-project-heading + .project_card_band > div:first-child .project_card_thumb,
-  .portfolio-projects .github-project-heading + .project_card_band > div:first-child .project_card_thumb_2 {
+  .portfolio-projects
+    .github-project-heading
+    + .project_card_band
+    > div:first-child
+    .project_card_thumb,
+  .portfolio-projects
+    .github-project-heading
+    + .project_card_band
+    > div:first-child
+    .project_card_thumb_2 {
     min-height: 0;
     aspect-ratio: 1.5;
   }
 
   .portfolio-projects .project_card article,
-  .portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child article,
-  .portfolio-projects .github-project-heading + .project_card_band > div:first-child article {
+  .portfolio-projects
+    #latest-projects
+    > .projects-section-heading:first-child
+    + .project_card_band
+    > div:first-child
+    article,
+  .portfolio-projects
+    .github-project-heading
+    + .project_card_band
+    > div:first-child
+    article {
     gap: 10px;
     padding: 20px 20px 8px;
   }
 
-  .portfolio-projects #latest-projects > .projects-section-heading:first-child + .project_card_band > div:first-child .project_card_links_placement:first-child a {
+  .portfolio-projects
+    #latest-projects
+    > .projects-section-heading:first-child
+    + .project_card_band
+    > div:first-child
+    .project_card_links_placement:first-child
+    a {
     font-size: 25px;
   }
 
-  .portfolio-projects .github-project-heading + .project_card_band > div:first-child .project_card_text {
+  .portfolio-projects
+    .github-project-heading
+    + .project_card_band
+    > div:first-child
+    .project_card_text {
     font-size: 25px;
   }
 
