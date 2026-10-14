@@ -1132,10 +1132,11 @@
   }
 
   .portfolio-home .home-footer {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 12px;
     padding: 28px 24px;
+    text-align: center;
   }
 }
 
