@@ -2,16 +2,24 @@ const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
-hamburger.addEventListener('click', ()=>{
-   //Animate Links
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-        link.classList.toggle("fade");
-    });
+if (hamburger && navLinks) {
+  hamburger.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    hamburger.classList.toggle("toggle", isOpen);
+    hamburger.setAttribute("aria-expanded", String(isOpen));
+    hamburger.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    links.forEach(link => link.classList.toggle("fade", isOpen));
+  });
 
-    //Hamburger Animation
-    hamburger.classList.toggle("toggle");
-});
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      hamburger.classList.remove("toggle");
+      hamburger.setAttribute("aria-expanded", "false");
+      hamburger.setAttribute("aria-label", "Open navigation menu");
+    });
+  });
+}
 var acc = document.getElementsByClassName("school_qualification_accordion");
 var i;
 
@@ -112,19 +120,30 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+if (modal && btn && span) {
+  const closeModal = () => {
     modal.style.display = "none";
-  }
-} 
+    modal.setAttribute("aria-hidden", "true");
+    btn.focus();
+  };
+
+  btn.addEventListener("click", () => {
+    modal.style.display = "block";
+    modal.setAttribute("aria-hidden", "false");
+    span.focus();
+  });
+
+  span.addEventListener("click", closeModal);
+
+  window.addEventListener("click", event => {
+    if (event.target === modal && modal.style.display === "block") {
+      closeModal();
+    }
+  });
+
+  window.addEventListener("keydown", event => {
+    if (event.key === "Escape" && modal.style.display === "block") {
+      closeModal();
+    }
+  });
+}
