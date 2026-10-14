@@ -442,6 +442,10 @@
   margin-bottom: 20px;
 }
 
+.portfolio-home .archive-project {
+  margin-top: 20px;
+}
+
 .portfolio-home .project-image {
   position: relative;
   min-height: 220px;
