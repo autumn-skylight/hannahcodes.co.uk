@@ -683,6 +683,161 @@
   color: var(--home-accent);
 }
 
+.portfolio-home .not-found {
+  position: relative;
+  display: grid;
+  min-height: calc(100svh - 104px);
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  overflow: hidden;
+  padding: 130px clamp(24px, 8vw, 124px) 92px;
+  background:
+    radial-gradient(ellipse at 77% 49%, rgba(123, 61, 116, 0.3), transparent 37%),
+    linear-gradient(116deg, #17131c 0%, #24162c 56%, #31182c 100%);
+}
+
+.portfolio-home .not-found-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 670px;
+}
+
+.portfolio-home .not-found h1 {
+  margin: 0;
+  color: var(--home-ink);
+  font-size: clamp(100px, 17vw, 210px);
+  font-weight: 700;
+  letter-spacing: -0.09em;
+  line-height: 0.95;
+}
+
+.portfolio-home .not-found h2 {
+  margin: 18px 0 0;
+  color: var(--home-ink);
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 1.2;
+}
+
+.portfolio-home .not-found-description {
+  max-width: 510px;
+  margin: 16px 0 0;
+  color: #d0c8d5;
+  font-size: clamp(15px, 1.4vw, 18px);
+  line-height: 1.8;
+}
+
+.portfolio-home .not-found-art {
+  position: relative;
+  display: grid;
+  min-height: 430px;
+  place-items: center;
+}
+
+.portfolio-home .not-found-orbit {
+  position: absolute;
+  width: min(430px, 38vw);
+  aspect-ratio: 1;
+  border: 1px solid rgba(233, 178, 221, 0.2);
+  border-radius: 50%;
+}
+
+.portfolio-home .not-found-orbit.orbit-two {
+  width: min(310px, 28vw);
+  border-color: rgba(233, 178, 221, 0.32);
+}
+
+.portfolio-home .not-found-note {
+  position: relative;
+  display: flex;
+  width: min(280px, 60vw);
+  aspect-ratio: 0.9;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.27);
+  border-radius: 46% 46% 38% 38%;
+  background: linear-gradient(145deg, #39283e, #211a29 72%);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+  transform: rotate(5deg);
+}
+
+.portfolio-home .not-found-symbol {
+  color: var(--home-accent);
+  font-size: clamp(100px, 15vw, 160px);
+  font-weight: 700;
+  letter-spacing: -0.1em;
+  line-height: 1;
+}
+
+.portfolio-home .not-found-caption {
+  color: #d3c8d8;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.portfolio-home .not-found-spark,
+.portfolio-home .not-found-code {
+  position: absolute;
+  color: var(--home-accent);
+}
+
+.portfolio-home .not-found-spark {
+  font-size: 25px;
+}
+
+.portfolio-home .not-found-spark.spark-one {
+  top: 17%;
+  right: 17%;
+}
+
+.portfolio-home .not-found-spark.spark-two {
+  bottom: 20%;
+  left: 12%;
+  color: #d7a7db;
+  font-size: 18px;
+}
+
+.portfolio-home .not-found-code {
+  right: 3%;
+  bottom: 13%;
+  color: rgba(244, 227, 245, 0.68);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transform: rotate(-8deg);
+}
+
+.portfolio-home :focus-visible {
+  outline: 2px solid var(--home-accent);
+  outline-offset: 4px;
+}
+
+.portfolio-home.portfolio-404 {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.portfolio-home.portfolio-404 main {
+  display: flex;
+  flex: 1;
+}
+
+.portfolio-home.portfolio-404 .not-found {
+  flex: 1;
+}
+
+.portfolio-home.portfolio-404 .home-footer {
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
 @media (min-width: 901px) {
   .portfolio-home .work-section > .section-heading,
   .portfolio-home .work-section > .featured-project,
@@ -711,6 +866,17 @@
 }
 
 @media (max-width: 900px) {
+  .portfolio-home .not-found {
+    min-height: calc(100svh - 104px);
+    grid-template-columns: 1fr 0.8fr;
+    padding-right: 6vw;
+    padding-left: 6vw;
+  }
+
+  .portfolio-home .not-found-art {
+    min-height: 350px;
+  }
+
   .portfolio-home .intro-hero {
     min-height: 700px;
     grid-template-columns: 1fr 0.8fr;
@@ -780,6 +946,54 @@
     align-content: center;
     gap: 8px;
     padding: 125px 24px 82px;
+  }
+
+  .portfolio-home .not-found {
+    min-height: 760px;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 8px;
+    padding: 125px 24px 82px;
+  }
+
+  .portfolio-home .not-found h1 {
+    font-size: clamp(112px, 32vw, 170px);
+  }
+
+  .portfolio-home .not-found h2 {
+    margin-top: 10px;
+    font-size: 27px;
+  }
+
+  .portfolio-home .not-found-description {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+
+  .portfolio-home .not-found-art {
+    min-height: 250px;
+    margin-top: 8px;
+  }
+
+  .portfolio-home .not-found-orbit {
+    width: min(260px, 70vw);
+  }
+
+  .portfolio-home .not-found-orbit.orbit-two {
+    width: min(200px, 54vw);
+  }
+
+  .portfolio-home .not-found-note {
+    width: min(170px, 44vw);
+  }
+
+  .portfolio-home .not-found-symbol {
+    font-size: 100px;
+  }
+
+  .portfolio-home .not-found-code {
+    right: 8%;
+    bottom: 8%;
   }
 
   .portfolio-home .hero-copy h1 {
@@ -918,10 +1132,11 @@
   }
 
   .portfolio-home .home-footer {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 12px;
     padding: 28px 24px;
+    text-align: center;
   }
 }
 

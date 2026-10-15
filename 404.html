@@ -4,56 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <title>hannah codes</title>
-  <link rel="icon" href="https://assets.hannahcodes.co.uk/images/home_pics/hc-with-bg-v2.ico">
+  <meta name="description" content="Sorry, that page couldn't be found. Head back to Hannah Codes and keep exploring.">
+  <meta name="theme-color" content="#1c1524">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Page not found | Hannah Codes</title>
+  <link rel="icon" href="https://assets.hannahcodes.co.uk/images/home/hc-with-bg-v2.ico">
 </head>
 
-<body>
-  <nav>
-    <div class="logo">
-      <picture>
-        <source srcset="https://assets.hannahcodes.co.uk/images/home_pics/hc-without-bg-v2.PNG"
-          media="(prefers-color-scheme: dark)">
-        <img src="https://assets.hannahcodes.co.uk/images/home_pics/light-hc-without-bg-v2.png">
-      </picture>
-    </div>
-    <div class="hamburger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-    <ul class="nav-links">
+<body class="portfolio-home portfolio-404">
+  <nav class="site-nav" aria-label="Main navigation">
+    <a class="logo" href="/index.html" aria-label="Hannah Codes home">
+      Hannah Codes<span class="accent-dot">.</span>
+    </a>
+    <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="site-navigation">
+      <span class="menu-label">Menu</span>
+      <span class="menu-icon" aria-hidden="true">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </span>
+    </button>
+    <ul class="nav-links" id="site-navigation">
       <li><a href="/index.html">Home</a></li>
-      <li><a href="/about/about.html">about</a></li>
-      <li><a href="/projects/projects.html">projects</a></li>
-      </div>
+      <li><a href="/about/about.html">About</a></li>
+      <li><a href="/projects/projects.html">Projects</a></li>
     </ul>
   </nav>
-  <img class="error_header_bg" alt=""
-    src="https://assets.hannahcodes.co.uk/images/home_pics/drew-beamer-vAij-E26haI-unsplash.jpg" draggable="false" />
-  <h1 class="error_header_h1">404 error</h1>
-  <h2 class="error_h2">sorry the page you was looking for can't be found, it may have been moved or deleted, you may
-    want to return home and try looking for the page again</h1>
 
-
-    <footer>
-      <div class="footer_display">
-        <div class="footer_logo">
-          <picture>
-            <source srcset="https://assets.hannahcodes.co.uk/images/home_pics/hc-without-bg-v2.PNG"
-              media="(prefers-color-scheme: dark)">
-            <img src="https://assets.hannahcodes.co.uk/images/home_pics/light-hc-without-bg-v2.png">
-          </picture>
+  <main id="home">
+    <section class="not-found" aria-labelledby="not-found-title">
+      <div class="not-found-copy">
+        <p class="eyebrow">WELL, THIS IS A LITTLE AWKWARD</p>
+        <h1 id="not-found-title">404<span class="accent-dot">.</span></h1>
+        <h2>Looks like this page wandered off.</h2>
+        <p class="not-found-description">The link may be out of date, or the page may have moved. Let's get you back
+          somewhere familiar.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="/index.html">Back to the homepage <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="/projects/projects.html">Explore my projects <span
+              aria-hidden="true">→</span></a>
         </div>
-        <p class="desktop">copyright hannah 2025</p>
-        <a href="mailto:hannah@hannahcodes.co.uk">contact me</a>
-        <a href="https://changelog-dev.hannahcodes.co.uk/index.html">view changelog</a>
-        <p class="mobile">copyright hannah 2025</p>
       </div>
-    </footer>
-    <script src="/assets/js/nav.js"></script>
+      <div class="not-found-art" aria-hidden="true">
+        <div class="not-found-orbit orbit-one"></div>
+        <div class="not-found-orbit orbit-two"></div>
+        <div class="not-found-note">
+          <span class="not-found-symbol">?</span>
+          <span class="not-found-caption">PAGE NOT<br>FOUND</span>
+        </div>
+        <span class="not-found-spark spark-one">✳</span>
+        <span class="not-found-spark spark-two">✳</span>
+        <span class="not-found-code">&lt; lost /&gt;</span>
+      </div>
+      <div class="hero-footnote"><span>HAPPENS TO THE BEST OF US</span><span>404 — PAGE NOT FOUND</span></div>
+    </section>
+  </main>
+
+  <footer class="home-footer">
+    <a class="footer-brand" href="/index.html">Hannah Codes<span class="accent-dot">.</span></a>
+    <p>Made with care by Hannah · 2026</p>
+    <div class="footer-links">
+      <a href="mailto:hannah@hannahcodes.co.uk">Say hello</a>
+      <a href="https://changelog.hannahcodes.co.uk/index.html">Changelog</a>
+    </div>
+  </footer>
+  <script src="/assets/js/nav.js"></script>
 </body>
 
 </html>
