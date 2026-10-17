@@ -15,9 +15,12 @@
     {
       "path": "../assets.hannahcodes.co.uk",
     },
+    {
+      "path": "../old.hannahcodes.co.uk",
+    },
   ],
   "settings": {
     "liveServer.settings.port": 5502,
-    "liveServer.settings.multiRootWorkspaceName": "assets.hannahcodes.co.uk",
+    "liveServer.settings.multiRootWorkspaceName": "hannahcodes.co.uk",
   },
 }
