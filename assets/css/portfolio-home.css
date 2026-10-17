@@ -541,6 +541,18 @@
   font-weight: 600;
 }
 
+.portfolio-home .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+padding-left: 8px;
+  margin-top: auto;
+}
+
+.portfolio-home .project-links .project-link {
+  margin-top: 0;
+}
+
 .portfolio-home .project-link span,
 .portfolio-home .text-link span {
   color: var(--home-accent);
