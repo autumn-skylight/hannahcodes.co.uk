@@ -1745,12 +1745,14 @@ h1 {
   }
 }
 
-.about_active, .qualification_accordion:hover {
+.about_active,
+.qualification_accordion:hover {
   background-color: var(--light-hover-active-colour);
   color: white;
 }
 @media (prefers-color-scheme: dark) {
-  .about_active, .qualification_accordion:hover {
+  .about_active,
+  .qualification_accordion:hover {
     background-color: var(--hover-active-colour);
     color: #000;
   }
@@ -1890,12 +1892,14 @@ h1 {
   }
 }
 
-.about_active, .college_qualification_accordion:hover {
+.about_active,
+.college_qualification_accordion:hover {
   background-color: var(--light-hover-active-colour);
   color: white;
 }
 @media (prefers-color-scheme: dark) {
-  .about_active, .college_qualification_accordion:hover {
+  .about_active,
+  .college_qualification_accordion:hover {
     background-color: var(--hover-active-colour);
     color: #000;
   }
@@ -2067,12 +2071,14 @@ h1 {
   }
 }
 
-.about_active, .cameo_qualification_accordion:hover {
+.about_active,
+.cameo_qualification_accordion:hover {
   background-color: var(--light-hover-active-colour);
   color: white;
 }
 @media (prefers-color-scheme: dark) {
-  .about_active, .cameo_qualification_accordion:hover {
+  .about_active,
+  .cameo_qualification_accordion:hover {
     background-color: var(--hover-active-colour);
     color: #000;
   }
@@ -2677,7 +2683,9 @@ h1 {
   padding: 0;
   border: 1px solid #1b1b1b;
   width: 65%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   animation-name: animatetop;
   animation-duration: 0.4s;
 }
@@ -3084,4 +3092,13 @@ footer a {
     align-items: center;
     padding: 0%;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
+.svg {
+  fill: white;
+  width: 2.5em;
+  padding-left: 0.9em;
+  padding-right: auto;
+}
+.svg:hover {
+  fill: pink;
+}

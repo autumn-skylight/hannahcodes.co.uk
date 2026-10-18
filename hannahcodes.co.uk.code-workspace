@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": "../changelog",
+    },
+    {
+      "path": "../GitQuest",
+    },
+    {
+      "path": "../adventures-at-pride",
+    },
+    {
+      "path": "../assets.hannahcodes.co.uk",
+    },
+    {
+      "path": "../old.hannahcodes.co.uk",
+    },
+  ],
+  "settings": {
+    "liveServer.settings.port": 5502,
+    "liveServer.settings.multiRootWorkspaceName": "old.hannahcodes.co.uk",
+  },
+}
