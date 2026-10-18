@@ -20,7 +20,3 @@ here are links to some of my other websites/ github repos which you can check ou
 ## Authors
 
 - [@autumn-skylight](https://www.github.com/autumn-skylight)
-
-## Feedback
-
-If you have any feedback at hannah@hannahcodes.co.uk
