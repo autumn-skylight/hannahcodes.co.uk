@@ -1,5 +1,6 @@
 .portfolio-home {
   --home-bg: #141217;
+  --home-bg-2: #111013;
   --home-panel: #1b1820;
   --home-ink: #f7f3fa;
   --home-muted: #bdb5c5;
@@ -330,10 +331,76 @@
   font-weight: 600;
   letter-spacing: 0.13em;
 }
+.portfolio-home .about-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.4fr 1.25fr 0.7fr;
+  align-items: center;
+  gap: 34px;
+  overflow: hidden;
+  padding: 100px clamp(24px, 8vw, 124px);
+  background: var(--home-bg);
+}
 
+.portfolio-home .about-marker {
+  align-self: start;
+  color: #d7b5d7;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.portfolio-home .about-copy {
+  max-width: 640px;
+}
+
+.portfolio-home .about-copy h2 {
+  margin-bottom: 22px;
+  font-size: clamp(38px, 5vw, 60px);
+}
+
+.portfolio-home .about-copy > p:not(.eyebrow) {
+  max-width: 570px;
+  margin: 0 0 26px;
+  color: #d4cad8;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.portfolio-home .text-link {
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(236, 145, 209, 0.55);
+}
+
+.portfolio-home .about-aside {
+  position: relative;
+  justify-self: end;
+  width: min(100%, 250px);
+  padding: 27px 23px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  background: rgba(16, 13, 19, 0.22);
+  transform: rotate(3deg);
+}
+
+.portfolio-home .aside-symbol {
+  color: var(--home-accent);
+  font-size: 28px;
+}
+
+.portfolio-home .about-aside p {
+  margin: 16px 0 26px;
+  color: #f3eaf4;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.35;
+}
 .portfolio-home .work-section {
   padding: 104px clamp(24px, 8vw, 124px) 118px;
-  background: var(--home-bg);
+  background: var(--home-bg-2);
 }
 
 .portfolio-home .section-heading {
@@ -529,74 +596,6 @@
 
 .portfolio-home .compact-project .project-copy p {
   margin: 10px 0 22px;
-}
-
-.portfolio-home .about-section {
-  position: relative;
-  display: grid;
-  grid-template-columns: 0.4fr 1.25fr 0.7fr;
-  align-items: center;
-  gap: 34px;
-  overflow: hidden;
-  padding: 100px clamp(24px, 8vw, 124px);
-  background: linear-gradient(115deg, #211a29, #2a1b2d 62%, #331c31);
-}
-
-.portfolio-home .about-marker {
-  align-self: start;
-  color: #d7b5d7;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-}
-
-.portfolio-home .about-copy {
-  max-width: 640px;
-}
-
-.portfolio-home .about-copy h2 {
-  margin-bottom: 22px;
-  font-size: clamp(38px, 5vw, 60px);
-}
-
-.portfolio-home .about-copy > p:not(.eyebrow) {
-  max-width: 570px;
-  margin: 0 0 26px;
-  color: #d4cad8;
-  font-size: 14px;
-  line-height: 1.9;
-}
-
-.portfolio-home .text-link {
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(236, 145, 209, 0.55);
-}
-
-.portfolio-home .about-aside {
-  position: relative;
-  justify-self: end;
-  width: min(100%, 250px);
-  padding: 27px 23px 22px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 18px;
-  background: rgba(16, 13, 19, 0.22);
-  transform: rotate(3deg);
-}
-
-.portfolio-home .aside-symbol {
-  color: var(--home-accent);
-  font-size: 28px;
-}
-
-.portfolio-home .about-aside p {
-  margin: 16px 0 26px;
-  color: #f3eaf4;
-  font-size: 21px;
-  font-weight: 600;
-  letter-spacing: -0.04em;
-  line-height: 1.35;
 }
 
 .portfolio-home .aside-caption {
