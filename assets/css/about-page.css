@@ -5,33 +5,37 @@
 .portfolio-about .about-hero {
   position: relative;
   display: grid;
-  min-height: min(690px, 92svh);
-  grid-template-columns: 1fr 0.8fr;
+  min-height: min(800px, 100svh);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   align-items: center;
   overflow: hidden;
-  padding: 130px clamp(24px, 8vw, 124px) 82px;
+  padding: 130px max(24px, calc((100vw - 980px) / 2)) 92px;
   background:
-    radial-gradient(ellipse at 78% 50%, rgba(123, 61, 116, 0.31), transparent 36%),
+    radial-gradient(
+      ellipse at 77% 49%,
+      rgba(123, 61, 116, 0.3),
+      transparent 37%
+    ),
     linear-gradient(116deg, #17131c 0%, #24162c 56%, #31182c 100%);
 }
 
 .portfolio-about .about-hero-copy {
   position: relative;
   z-index: 1;
-  max-width: 650px;
+  max-width: 800px;
 }
 
 .portfolio-about .about-hero h1 {
   margin: 0;
   color: var(--home-ink);
-  font-size: clamp(64px, 9vw, 112px);
+  font-size: clamp(64px, 9vw, 90px);
   font-weight: 700;
   letter-spacing: -0.075em;
   line-height: 0.98;
 }
 
 .portfolio-about .about-intro {
-  max-width: 500px;
+  max-width: 600px;
   margin: 25px 0 0;
   color: #d0c8d5;
   font-size: clamp(16px, 1.5vw, 20px);
@@ -49,7 +53,9 @@
   color: var(--home-ink);
   font-size: 12px;
   font-weight: 600;
-  transition: border-color 160ms ease, color 160ms ease;
+  transition:
+    border-color 160ms ease,
+    color 160ms ease;
 }
 
 .portfolio-about .about-hero-link span {
@@ -73,7 +79,12 @@
   position: absolute;
   z-index: 1;
   inset: 0;
-  background: linear-gradient(90deg, rgba(23, 19, 28, 0.98) 0%, rgba(23, 19, 28, 0.86) 36%, rgba(23, 19, 28, 0.24) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(23, 19, 28, 0.98) 0%,
+    rgba(23, 19, 28, 0.86) 36%,
+    rgba(23, 19, 28, 0.24) 100%
+  );
   content: "";
 }
 
@@ -550,7 +561,12 @@
   }
 
   .portfolio-about .about-portrait::after {
-    background: linear-gradient(180deg, rgba(23, 19, 28, 0.96) 0%, rgba(23, 19, 28, 0.84) 46%, rgba(23, 19, 28, 0.3) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(23, 19, 28, 0.96) 0%,
+      rgba(23, 19, 28, 0.84) 46%,
+      rgba(23, 19, 28, 0.3) 100%
+    );
   }
 
   .portfolio-about .portrait-note {
