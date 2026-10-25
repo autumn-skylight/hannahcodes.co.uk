@@ -300,7 +300,6 @@
 
 .portfolio-home .portrait-frame {
   position: absolute;
-  inset: 0;
   overflow: hidden;
 }
 
