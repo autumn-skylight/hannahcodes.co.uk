@@ -644,11 +644,11 @@
 .portfolio-home .not-found {
   position: relative;
   display: grid;
-  min-height: calc(100svh - 104px);
-  grid-template-columns: 1.1fr 0.9fr;
+  min-height: min(800px, 100svh);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   align-items: center;
   overflow: hidden;
-  padding: 130px clamp(24px, 8vw, 124px) 92px;
+  padding: 130px max(24px, calc((100vw - 980px) / 2)) 92px;
   background:
     radial-gradient(
       ellipse at 77% 49%,
@@ -697,33 +697,19 @@
   place-items: center;
 }
 
-.portfolio-home .not-found-orbit {
-  position: absolute;
-  width: min(430px, 38vw);
-  aspect-ratio: 1;
-  border: 1px solid rgba(233, 178, 221, 0.2);
-  border-radius: 50%;
-}
-
-.portfolio-home .not-found-orbit.orbit-two {
-  width: min(310px, 28vw);
-  border-color: rgba(233, 178, 221, 0.32);
-}
-
 .portfolio-home .not-found-note {
   position: relative;
   display: flex;
   width: min(280px, 60vw);
-  aspect-ratio: 0.9;
+  aspect-ratio: 0.97;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8px;
   border: 1px solid rgba(255, 255, 255, 0.27);
-  border-radius: 46% 46% 38% 38%;
+  border-radius: 50% 50% 50% 50%;
   background: linear-gradient(145deg, #39283e, #211a29 72%);
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
-  transform: rotate(5deg);
 }
 
 .portfolio-home .not-found-symbol {
