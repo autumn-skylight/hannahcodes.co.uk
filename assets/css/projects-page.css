@@ -1,16 +1,16 @@
 .portfolio-projects .projects-hero {
   position: relative;
   display: grid;
-  min-height: min(620px, 84svh);
-  grid-template-columns: 1fr 0.8fr;
+  min-height: min(800px, 100svh);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   align-items: center;
   overflow: hidden;
-  padding: 130px clamp(24px, 8vw, 124px) 82px;
+  padding: 130px max(24px, calc((100vw - 980px) / 2)) 92px;
   background:
     radial-gradient(
-      ellipse at 78% 48%,
+      ellipse at 77% 49%,
       rgba(123, 61, 116, 0.3),
-      transparent 36%
+      transparent 37%
     ),
     linear-gradient(116deg, #17131c 0%, #24162c 56%, #31182c 100%);
 }
@@ -24,7 +24,7 @@
 .portfolio-projects .projects-hero h1 {
   margin: 0;
   color: var(--home-ink);
-  font-size: clamp(58px, 8.4vw, 106px);
+  font-size: clamp(58px, 8.4vw, 90px);
   font-weight: 700;
   letter-spacing: -0.075em;
   line-height: 0.98;
