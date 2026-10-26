@@ -862,7 +862,7 @@
     width: auto;
     flex-direction: row;
     justify-content: space-between;
-    padding: 7px;
+    padding: 5px;
     border-radius: 14px;
   }
 
@@ -871,7 +871,7 @@
   }
 
   .portfolio-home .nav-links li a {
-    padding: 10px 6px;
+    padding: 8px 4px;
     text-align: center;
     white-space: nowrap;
   }
@@ -1036,6 +1036,24 @@
 
   .portfolio-home .work-section {
     padding: 76px 20px 82px;
+  }
+  .portfolio-home .project-link,
+  .portfolio-home .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: auto;
+    color: var(--home-ink);
+    font-size: 9px;
+    font-weight: 600;
+  }
+
+  .portfolio-home .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 11px;
+    padding-left: 8px;
+    margin-top: auto;
   }
 
   .portfolio-home .section-heading {
