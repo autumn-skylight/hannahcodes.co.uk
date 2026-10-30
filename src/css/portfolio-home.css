@@ -97,7 +97,23 @@
   font-size: 13px;
   font-weight: 600;
 }
-
+.portfolio-home .site-nav .hamburger:hover {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 17px 13px 21px;
+  border: 1px solid var(--home-line);
+  border-radius: 999px;
+  background: rgba(20, 18, 23, 0.38);
+  color: var(--home-accent);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
 .portfolio-home .menu-icon {
   display: grid;
   width: 17px;
@@ -252,7 +268,6 @@
   min-height: 50px;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   padding: 0 20px;
   border: 1px solid var(--home-line);
   border-radius: 999px;
@@ -262,10 +277,6 @@
     transform 160ms ease,
     background 160ms ease,
     border-color 160ms ease;
-}
-
-.portfolio-home .button:hover {
-  transform: translateY(-2px);
 }
 
 .portfolio-home .button-primary {
@@ -548,7 +559,7 @@
 .portfolio-home .text-link {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: 6px;
   margin-top: auto;
   color: var(--home-ink);
   font-size: 12px;
