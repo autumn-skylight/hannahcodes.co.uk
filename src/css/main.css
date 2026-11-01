@@ -20,43 +20,13 @@
 }
 
 :root {
-  /*light mode colours*/
-  --light-hamburger-icon-colour: black;
-  --light-body-bg-colour: #f8f8ff;
-  --light-hover-active-colour: #5c2246;
-  --light-nav-footer-bg-colour: #f5f5f5;
-  --light-nav-text-colour: black;
-  --light-svg-fill-colour: black;
-  --light-section-1-bg-colour: #cfcaca;
-  --light-section-2-bg-colour: #adafb8;
-  --light-section-3-bg-colour: #c7c7c7;
-  --light-section-4-bg-colour: #c0bcbc;
-  --light-sorce-code-svg-fill-colour: #5a5c5e;
-  --light-card-bg-colour: white;
-  --light-card-title-span-colour: #333;
-  --light-card-box-shadow-colour: rgba(0, 0, 0, 0.2);
-  --light-card-box-shadow-hover-colour: #5c2246;
-  --light-top-border-colour: #5c2246;
-  --light-project-discription-colour: #29292b;
-  /*dark mode colours*/
-  --hover-active-colour: #f2c7e2;
-  --svg-fill-colour: #fff;
-  --sorce-code-svg-fill-colour: hsl(214, 7%, 47%);
-  --section-1-bg-colour: #121212;
-  --section-2-bg-colour: #18191c;
-  --section-3-bg-colour: #0f1012;
-  --section-4-bg-colour: #111114;
-  --body-bg-colour: #121212;
-  --nav-footer-bg-colour: #131418;
-  --nav-text-colour: #f2f5f7;
-  --hamburger-icon-colour: #f2f5f7;
-  --card-bg-colour: #262626;
-  --card-title-span-colour: rgb(255, 251, 251);
-  --card-box-shadow-colour: rgba(139, 138, 138, 0.2);
-  --card-box-shadow-hover-colour: #f2c7e2;
-  --top-border-colour: #f2c7e2;
-  --footer-link-colour: dimgrey;
-  --blog-span-hr-colour: rgba(105, 105, 105, 0.26);
+  --home-bg: #141217;
+  --home-bg-2: #111013;
+  --home-panel: #1b1820;
+  --home-ink: #f7f3fa;
+  --home-muted: #bdb5c5;
+  --home-accent: #ec91d1;
+  --home-line: rgba(247, 243, 250, 0.17);
   --project-discription-colour: #b5b8bd;
 }
 
@@ -331,7 +301,35 @@ img.index_header_bg {
     color: var(--nav-text-colour);
   }
 }
-
+.arrow_svg {
+  width: 2em;
+  height: 2em;
+  fill: currentColor;
+  padding-left: 0.2em;
+}
+.arrow_svg_2 {
+  width: 2em;
+  height: 2em;
+  fill: currentColor;
+  padding-right: 0.2em;
+  padding-bottom: 0.2em;
+}
+.arrow_down_svg {
+  width: 2em;
+  height: 2em;
+  transform: rotate(90deg);
+  fill: currentColor;
+  padding-left: 0.2em;
+  padding-top: -10em;
+}
+.arrow_up_svg {
+  width: 2em;
+  height: 2em;
+  transform: rotate(270deg);
+  fill: currentColor;
+  padding-left: 0.2em;
+  padding-top: -0.3em;
+}
 .index_header_welcome_text {
   margin: auto;
   text-align: center;
@@ -1075,48 +1073,12 @@ h1 {
   }
 }
 
-.index_card_link_svg {
-  fill: var(--light-svg-fill-colour);
-  width: 2.5em;
-  height: 2.5em;
-  padding-left: 0.9em;
-  padding-right: auto;
-}
 @media screen and (max-width: 460px) {
-  .index_card_link_svg {
-    margin-left: -0.2em;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .index_card_link_svg {
-    fill: var(--svg-fill-colour);
-  }
 }
 
-.index_card_source_code_svg {
-  fill: var(--light-sorce-code-svg-fill-colour);
-  width: 2em;
-  height: 2em;
-  padding-left: 0.7em;
-  padding-right: auto;
-}
-
-.index_card_project_link_svg {
-  fill: var(--light-svg-fill-colour);
-  width: 2.5em;
-  height: 2.5em;
-  padding-left: 0.9em;
-  padding-right: auto;
-}
 @media screen and (max-width: 460px) {
-  .index_card_project_link_svg {
-    margin-right: 0.5em;
-  }
 }
 @media (prefers-color-scheme: dark) {
-  .index_card_project_link_svg {
-    fill: var(--svg-fill-colour);
-  }
 }
 
 /*------5:about.html-styling-----*/
@@ -2448,50 +2410,6 @@ h1 {
   }
 }
 
-.project_card_link_svg {
-  fill: var(--light-svg-fill-colour);
-  width: 2.5em;
-  height: 2.5em;
-  padding-left: 0.9em;
-  padding-right: auto;
-}
-@media screen and (max-width: 460px) {
-  .project_card_link_svg {
-    margin-left: -0.2em;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .project_card_link_svg {
-    fill: var(--svg-fill-colour);
-  }
-}
-
-.project_card_source_code_svg {
-  fill: var(--light-sorce-code-svg-fill-colour);
-  width: 2em;
-  height: 2em;
-  padding-left: 0.7em;
-  padding-right: auto;
-}
-
-.project_card_project_link_svg {
-  fill: var(--light-svg-fill-colour);
-  width: 2.5em;
-  height: 2.5em;
-  padding-left: 0.9em;
-  padding-right: auto;
-}
-@media screen and (max-width: 460px) {
-  .project_card_project_link_svg {
-    margin-right: 0.5em;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .project_card_project_link_svg {
-    fill: var(--svg-fill-colour);
-  }
-}
-
 /*---project/hannahcodes-styling---*/
 .project_hc_card_band {
   width: 90%;
@@ -3093,12 +3011,3 @@ footer a {
     padding: 0%;
   }
 } /*# sourceMappingURL=main.css.map */
-.svg {
-  fill: white;
-  width: 2.5em;
-  padding-left: 0.9em;
-  padding-right: auto;
-}
-.svg:hover {
-  fill: pink;
-}

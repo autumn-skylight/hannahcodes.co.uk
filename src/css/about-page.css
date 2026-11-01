@@ -213,7 +213,9 @@
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(236, 145, 209, 0.55);
 }
-
+.portfolio-about .text-link:hover {
+  color: var(--home-accent);
+}
 .portfolio-about .story-aside {
   width: min(100%, 250px);
   justify-self: end;
@@ -302,10 +304,8 @@
 
 .portfolio-about .interest-symbol {
   display: block;
-  min-height: 48px;
-  color: var(--home-accent);
-  font-size: 27px;
-  font-weight: 600;
+  width: 30px;
+  height: 30px;
 }
 
 .portfolio-about .interest-card h3 {
