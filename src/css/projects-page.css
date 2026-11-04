@@ -537,8 +537,11 @@
 
 .portfolio-projects .project_hc_card_links_placement {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px 20px;
+  flex-wrap: wrap; /* Allows them to sit side-by-side and wrap only if space runs out */
+  justify-content: center; /* Centers the links horizontally */
+  gap: 15px; /* Clean, even spacing between Dev and Release Candidate */
+  margin: 10px auto 0; /* Removes the heavy left offset percentage */
+  width: 100%;
 }
 
 .portfolio-projects .project_hc_card_link_placement {
