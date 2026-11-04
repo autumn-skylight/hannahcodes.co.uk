@@ -732,6 +732,7 @@
 
   .portfolio-projects .art-ring {
     width: min(280px, 72vw);
+    margin-top: 4em;
   }
 
   .portfolio-projects .ring-small {
@@ -739,7 +740,8 @@
   }
 
   .portfolio-projects .code-mark {
-    font-size: 105px;
+    width: min(140px, 45vw);
+    margin-top: 4.5em;
   }
 
   .portfolio-projects .art-caption {
