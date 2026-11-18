@@ -1,26 +1,40 @@
 {
   "folders": [
     {
+      "name": "hannahcodes.co.uk",
       "path": ".",
     },
     {
+      "name": "changelog",
       "path": "../changelog",
     },
     {
+      "name": "GitQuest",
       "path": "../GitQuest",
     },
     {
+      "name": "adventures-at-pride",
       "path": "../adventures-at-pride",
     },
     {
+      "name": "assets.hannahcodes.co.uk",
       "path": "../assets.hannahcodes.co.uk",
     },
     {
+      "name": "old.hannahcodes.co.uk",
       "path": "../old.hannahcodes.co.uk",
+    },
+    {
+      "name": "andoverpridenights.co.uk",
+      "path": "../andoverpridenights.co.uk",
+    },
+    {
+      "name": "assets.andoverpridenights.co.uk",
+      "path": "../assets.andoverpridenights.co.uk",
     },
   ],
   "settings": {
     "liveServer.settings.port": 5502,
-    "liveServer.settings.multiRootWorkspaceName": "hannahcodes.co.uk",
+    "liveServer.settings.multiRootWorkspaceName": "andoverpridenights.co.uk",
   },
 }

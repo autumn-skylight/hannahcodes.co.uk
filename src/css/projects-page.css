@@ -120,7 +120,7 @@
 .portfolio-projects a:hover {
   display: inline-flex;
   align-items: center;
-  gap: 0.3em; /* Automatically handles spacing between text and the icon */
+  /* Automatically handles spacing between text and the icon */
   text-decoration: none; /* Optional: cleans up underlines if needed */
 }
 .portfolio-projects .arrow_down_svg {
@@ -533,6 +533,42 @@
 .portfolio-projects .close:focus-visible {
   border-color: var(--home-accent);
   color: var(--home-accent);
+}
+.about-portrait {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+}
+
+.about-portrait::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(23, 19, 28, 0.98) 0%,
+    rgba(23, 19, 28, 0.86) 36%,
+    rgba(23, 19, 28, 0.24) 100%
+  );
+  content: "";
+}
+
+.portrait-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #524253;
+}
+
+.portrait-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
 }
 
 .portfolio-projects .project_hc_card_links_placement {
