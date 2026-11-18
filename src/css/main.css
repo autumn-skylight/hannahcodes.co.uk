@@ -2244,27 +2244,6 @@ h1 {
   box-shadow: 0 4px 5px var(--light-card-box-shadow-hover-colour);
 }
 @media screen and (max-width: 960px) {
-  .project_card {
-    margin-top: 2em;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  .project_card {
-    background: var(--card-bg-colour);
-    text-decoration: none;
-    color: var(--nav-text-colour);
-    box-shadow: 0 2px 5px var(--card-box-shadow-colour);
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    position: relative;
-    top: 0;
-    transition: all 0.1s ease-in;
-  }
-  .project_card:hover {
-    top: -2px;
-    box-shadow: 0 4px 5px var(--card-box-shadow-hover-colour);
-  }
 }
 
 .project_card_links {
