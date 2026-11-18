@@ -7,12 +7,15 @@
   <meta name="description"
     content="Explore Hannah's web development projects, from CodeScape to the evolution of the Hannah Codes portfolio.">
   <meta name="theme-color" content="#1c1524">
-  <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/portfolio-home.css">
-  <link rel="stylesheet" href="../assets/css/projects-page.css">
+  <link rel="stylesheet" href="../src/css/main.css">
+  <link rel="stylesheet" href="../src/css/portfolio-home.css">
+  <link rel="stylesheet" href="../src/css/projects-page.css">
+  <link rel="stylesheet" href="../src/css/about-page.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <title>Projects | Hannah Codes</title>
-  <link rel="icon" href="https://assets.hannahcodes.co.uk/images/home/hc-with-bg-v2.ico">
+  <link rel="icon" href="https://assets.hannahcodes.co.uk/images/home/hc-logo.ico">
+  <script src="https://kit.fontawesome.com/b462bf7f1d.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="portfolio-home portfolio-projects">
@@ -43,16 +46,20 @@
         <h1 id="projects-title">Projects<br>I've made<span class="accent-dot">.</span></h1>
         <p class="projects-intro">A collection of experiments, ideas, and websites I've brought to life along the way.
         </p>
-        <a class="projects-hero-link" href="#latest-projects">Explore my work <span aria-hidden="true">↓</span></a>
+        <a class="projects-hero-link" href="#latest-projects">Explore my work<svg xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640" class="arrow_down_svg">
+            <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+            <path
+              d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z" />
+          </svg></a>
       </div>
-      <div class="projects-hero-art" aria-hidden="true">
-        <span class="art-ring ring-large"></span>
-        <span class="art-ring ring-small"></span>
-        <span class="code-mark">&lt;/&gt;</span>
-        <span class="art-star">✳</span>
-        <span class="art-caption">IDEAS INTO INTERFACES</span>
-      </div>
-      <div class="hero-footnote"><span>DESIGN · CODE · CURIOSITY</span><span>SELECTED WORK</span></div>
+      <div class="about-portrait" aria-label="Portrait of Hannah">
+        <div class="portrait-orbit"></div>
+        <div class="portrait-image">
+          <img src="https://assets.hannahcodes.co.uk/images/projects/HC-GQ-APP.jpg"
+            alt="A collage of the Hannah Codes, GitQuest, and Adventures at Pride project websites">
+        </div>
+        <div class="hero-footnote"><span>DESIGN · CODE · CURIOSITY</span><span>SELECTED WORK</span></div>
     </section>
 
     <section class="projects_section" id="latest-projects">
@@ -67,27 +74,33 @@
         <div class="item-7">
           <div class="project_card project_card_a">
             <div class="project_card_thumb_2"
-              style="background-image: url(https://assets.hannahcodes.co.uk/images/projects/hc-v14.png);"></div>
+              style="background-image: url(https://assets.hannahcodes.co.uk/images/projects/hc-v14.1.png);"></div>
             <article>
               <div class="project_card_links_placement">
                 <div class="project_card_link_placement"><a href="https://hannahcodes.co.uk/index.html"
-                    class="project_card_links">hannahcodes (v14) </a>
+                    class="project_card_links">hannahcodes (v14.1) </a>
                 </div>
               </div>
               <div class="project_card_links_placement">
                 <div class="project_card_link_placement">
                   <a href="https://github.com/autumn-skylight/hannahcodes.co.uk/tree/main"
                     class="project_card_source_code_links">source
-                    code <img class="svg" src="https://assets.hannahcodes.co.uk/images/icons/arrow-right.svg"
-                      alt="Arrow pointing right"></a>
+                    code <svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_2
+        " viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a>
                 </div>
               </div>
               <div class="project_card_links_placement">
                 <div class="project_card_link_placement">
                   <button id="myBtn" class="project_card_source_code_links modal_button" type="button"
-                    aria-haspopup="dialog">View other versions <img class="svg"
-                      src="https://assets.hannahcodes.co.uk/images/icons/arrow-right.svg"
-                      alt="Arrow pointing right"></button>
+                    aria-haspopup="dialog">View other versions <svg xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 640" class="arrow_up_svg">
+                      <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z" />
+                    </svg></button>
 
 
                 </div>
@@ -95,22 +108,29 @@
             </article>
           </div>
         </div>
-
         <div class="item-7">
           <div class="project_card project_card_a">
             <div class="project_card_thumb_2"
               style="background-image: url(https://assets.hannahcodes.co.uk/images/projects/GitQuest.png);"></div>
             <article>
               <h3 class="project_card_text"> GitQuest</h3>
+
+              <p>A gamified approach to learning Git.</p>
               <div class="project_card_links_placement">
                 <div class="project_card_link_placement">
                   <a href="https://gitquest.hannahcodes.co.uk" class="project_card_source_code_links">websie
-                    <img class="svg" src="https://assets.hannahcodes.co.uk/images/icons/arrow-right.svg"
-                      alt="Arrow pointing right"></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_2
+                    " viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a>
                   <a href="https://github.com/autumn-skylight/GitQuest/tree/main"
                     class="project_card_source_code_links">source
-                    code <img class="svg" src="https://assets.hannahcodes.co.uk/images/icons/arrow-right.svg"
-                      alt="Arrow pointing right"></a>
+                    code <svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_2
+                    " viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a>
                 </div>
               </div>
             </article>
@@ -123,15 +143,22 @@
             </div>
             <article>
               <h3 class="project_card_text"> Adventures At Pride</h3>
+              <p>A website for my journey through Pride.</p>
               <div class="project_card_links_placement">
                 <div class="project_card_link_placement">
                   <a href="https://adventuresatpride.hannahcodes.co.uk" class="project_card_source_code_links">website
-                    <img class="svg" src="https://assets.hannahcodes.co.uk/images/icons/arrow-right.svg"
-                      alt="Arrow pointing right"></a>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_2
+                    " viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a>
                   <a href="https://github.com/autumn-skylight/adventures-at-pride/tree/main"
                     class="project_card_source_code_links">source
-                    code <img class="svg" src="https://assets.hannahcodes.co.uk/images/icons/arrow-right.svg"
-                      alt="Arrow pointing right"></a>
+                    code <svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_2
+                    " viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a>
                 </div>
               </div>
             </article>
@@ -156,8 +183,11 @@
                 <div class="project_card_link_placement">
                   <a href="https://github.com/autumn-skylight/codescape-app"
                     class="project_card_source_code_links">source
-                    code <img class="svg" src="https://assets.hannahcodes.co.uk/images/icons/arrow-right.svg"
-                      alt="Arrow pointing right"></a>
+                    code <svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_2
+                    " viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a>
                 </div>
               </div>
             </article>
@@ -171,8 +201,12 @@
               <h3 class="project_card_text"> hannah-plays</h3>
               <div class="project_card_links_placement">
                 <div class="project_card_link_placement">
-                  <!-- 
-                 <a href="" class="project_card_source_code_links"> <span aria-hidden="true" class="arrow">↗</span></a> -->
+                  <a href="https://github.com/autumn-skylight/hannah-plays-web/tree/main"
+                    class="project_card_source_code_links">source code <svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_2
+                    " viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a>
                 </div>
               </div>
             </article>
@@ -187,9 +221,12 @@
               <div class="project_card_links_placement">
                 <div class="project_card_link_placement">
                   </svg>
-                  <!--<a href="https://github.com/autumn-skylight/blog.hannahcodes.co.uk/tree/main"
-                    class="project_card_source_code_links">source code <span aria-hidden="true"
-                      class="arrow">↗</span></a> -->
+                  <a href="https://github.com/autumn-skylight/blog.hannahcodes.co.uk/tree/main"
+                    class="project_card_source_code_links">source code <svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_2
+                    " viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a>
                 </div>
               </div>
 
@@ -206,8 +243,11 @@
                 <div class="project_card_link_placement">
                   <a href="https://github.com/autumn-skylight/codescreate.co.uk/tree/dev"
                     class="project_card_source_code_links">source
-                    code<img class="svg" src="https://assets.hannahcodes.co.uk/images/icons/arrow-right.svg"
-                      alt="Arrow pointing right"></a>
+                    code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_2
+                    " viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a>
                 </div>
               </div>
             </article>
@@ -231,8 +271,13 @@
               <h3 class="project_card_text"> Come check out my GitHub profile</h3>
               <div class="project_card_links_placement">
                 <div class="project_card_link_placement">
-                  <a href="https://github.com/autumn-skylight" class="project_card_links">github</a> <img class="svg"
-                    src="https://assets.hannahcodes.co.uk/images/icons/arrow-right.svg" alt="Arrow pointing right">
+                  <a href="https://github.com/autumn-skylight/" class="project_card_source_code_links">GitHub profile
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_2
+                                  "
+                      viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a>
                 </div>
 
               </div>
@@ -250,10 +295,20 @@
               <p class="modal_p" id="versions-description">Explore the different stages of this portfolio, or try the
                 development and release-candidate sites.</p>
               <div class="project_hc_card_links_placement">
-                <div class="project_hc_card_link_placement"><a href="https://dev.hannahcodes.co.uk"
-                    class="project_hc_card_links">Dev</a> </div>
-                <div class="project_hc_card_link_placement"><a href="https://rc.hannahcodes.co.uk"
-                    class="project_hc_card_links">release candiate</a> </div>
+                <div class="project_hc_card_link_placement"><a class="text-link_hc" href="https://dev.hannahcodes.co.uk"
+                    class="project_hc_card_links">Dev<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                            "
+                      viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a> </div>
+                <div class="project_hc_card_link_placement"><a class="text-link_hc" href="https://rc.hannahcodes.co.uk"
+                    class="project_hc_card_links">release candiate<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                            "
+                      viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                      <path
+                        d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                    </svg></a> </div>
               </div>
             </div>
             <div class="modal-body">
@@ -267,13 +322,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v1/index.html"
-                            class="project_hc_card_links">hannahcodes (v1)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v1) <svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v1"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code <svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -288,13 +354,23 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v2/index.html"
-                            class="project_hc_card_links">hannahcodes (v2)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v2)<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v2"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -309,13 +385,23 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v3/index.html"
-                            class="project_hc_card_links">hannahcodes (v3)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v3)<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v3"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -330,13 +416,23 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v4/index.html"
-                            class="project_hc_card_links">hannahcodes (v4)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v4)<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v4"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -351,13 +447,23 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v5/index.html"
-                            class="project_hc_card_links">hannahcodes (v5)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v5)<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v5"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -372,13 +478,23 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v6/index.html"
-                            class="project_hc_card_links">hannahcodes (v6)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v6)<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v6"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -393,13 +509,23 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v7/index.html"
-                            class="project_hc_card_links">hannahcodes (v7)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v7)<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v7"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -414,13 +540,23 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v8/index.html"
-                            class="project_hc_card_links">hannahcodes (v8)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v8)<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v8"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -435,13 +571,23 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v9/index.html"
-                            class="project_hc_card_links">hannahcodes (v9)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v9)<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v9"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -456,13 +602,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v10/index.html"
-                            class="project_hc_card_links">hannahcodes (v10)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v10)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v10"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -477,13 +634,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v11/index.html"
-                            class="project_hc_card_links">hannahcodes (v11)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v11)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v11"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -498,13 +666,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v11.1/index.html"
-                            class="project_hc_card_links">hannahcodes (v11.1)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v11.1)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v11.1"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -519,13 +698,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v11.2/index.html"
-                            class="project_hc_card_links">hannahcodes (v11.2)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v11.2)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v11.2"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -540,13 +730,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v11.2.1/index.html"
-                            class="project_hc_card_links">hannahcodes (v11.2.1)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v11.2.1)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v11.2.1"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -561,13 +762,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v11.3/index.html"
-                            class="project_hc_card_links">hannahcodes (v11.3)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v11.3)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v11.3"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -582,13 +794,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v11.3.1/index.html"
-                            class="project_hc_card_links">hannahcodes (v11.3.1)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v11.3.1)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v11.3.1"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -603,13 +826,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v12/index.html"
-                            class="project_hc_card_links">hannahcodes (v12)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v12)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v12"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -624,13 +858,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v12.1/index.html"
-                            class="project_hc_card_links">hannahcodes (v12.1)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v12.1)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v12.1/"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -645,13 +890,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v12.2/index.html"
-                            class="project_hc_card_links">hannahcodes (v12.2)</a></div>
+                            class="project_hc_card_links">hannahcodes (v12.2)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a></div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v12.2"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -666,13 +922,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v12.3/index.html"
-                            class="project_hc_card_links">hannahcodes (v12.3)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v12.3)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v12.3"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -687,13 +954,24 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v12.4/index.html"
-                            class="project_hc_card_links">hannahcodes (v12.4)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v12.4)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v12.4"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -708,13 +986,56 @@
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement"><a
                             href="https://old.hannahcodes.co.uk/hannahcodes/v13/index.html"
-                            class="project_hc_card_links">hannahcodes (v13)</a> </div>
+                            class="project_hc_card_links">hannahcodes (v13)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
                       </div>
                       <div class="project_card_links_placement">
                         <div class="project_card_link_placement">
                           <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v13"
                             class="project_hc_card_source_code_links">source
-                            code</a>
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="item-7">
+                  <div class="project_card project_card_a">
+                    <div class="project_card_thumb_2"
+                      style="background-image: url(https://assets.hannahcodes.co.uk/images/projects/hc-v14.png);">
+                    </div>
+                    <article>
+                      <div class="project_card_links_placement">
+                        <div class="project_card_link_placement"><a
+                            href="https://old.hannahcodes.co.uk/hannahcodes/v14/index.html"
+                            class="project_hc_card_links">hannahcodes (v14)<svg xmlns="http://www.w3.org/2000/svg"
+                              class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a> </div>
+                      </div>
+                      <div class="project_card_links_placement">
+                        <div class="project_card_link_placement">
+                          <a href="https://github.com/autumn-skylight/old.hannahcodes.co.uk/tree/main/hannahcodes/v14"
+                            class="project_hc_card_source_code_links">source
+                            code<svg xmlns="http://www.w3.org/2000/svg" class="arrow_svg_3
+                                                "
+                              viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                              <path
+                                d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+                            </svg></a>
                         </div>
                       </div>
                     </article>
@@ -730,11 +1051,10 @@
     <a class="footer-brand" href="../index.html">Hannah Codes<span class="accent-dot">.</span></a>
     <p>Made with care by Hannah · 2026</p>
     <div class="footer-links">
-      <a href="mailto:hannah@hannahcodes.co.uk">Say hello</a>
       <a href="https://changelog.hannahcodes.co.uk/index.html">Changelog</a>
     </div>
   </footer>
-  <script src="../assets/js/nav.js"></script>
+  <script src="../src/js/nav.js"></script>
 </body>
 
 </html>

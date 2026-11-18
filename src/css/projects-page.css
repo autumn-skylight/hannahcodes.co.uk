@@ -1,16 +1,16 @@
 .portfolio-projects .projects-hero {
   position: relative;
   display: grid;
-  min-height: min(620px, 84svh);
-  grid-template-columns: 1fr 0.8fr;
+  min-height: min(800px, 100svh);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   align-items: center;
   overflow: hidden;
-  padding: 130px clamp(24px, 8vw, 124px) 82px;
+  padding: 130px max(24px, calc((100vw - 980px) / 2)) 92px;
   background:
     radial-gradient(
-      ellipse at 78% 48%,
+      ellipse at 77% 49%,
       rgba(123, 61, 116, 0.3),
-      transparent 36%
+      transparent 37%
     ),
     linear-gradient(116deg, #17131c 0%, #24162c 56%, #31182c 100%);
 }
@@ -24,7 +24,7 @@
 .portfolio-projects .projects-hero h1 {
   margin: 0;
   color: var(--home-ink);
-  font-size: clamp(58px, 8.4vw, 106px);
+  font-size: clamp(58px, 8.4vw, 90px);
   font-weight: 700;
   letter-spacing: -0.075em;
   line-height: 0.98;
@@ -55,10 +55,16 @@
     border-color 160ms ease,
     color 160ms ease;
 }
-
-.portfolio-projects .projects-hero-link span {
+.portfolio-projects .text-link_hc {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--home-ink);
+  border-bottom: 1px solid rgba(236, 145, 209, 0.55);
+}
+.portfolio-projects .text-link_hc:hover {
   color: var(--home-accent);
-  font-size: 16px;
 }
 
 .portfolio-projects .projects-hero-link:hover {
@@ -88,14 +94,51 @@
 
 .portfolio-projects .code-mark {
   position: relative;
-  z-index: 1;
+  width: min(250px, 22vw);
+  aspect-ratio: 1;
   color: var(--home-accent);
-  font-size: clamp(76px, 12vw, 150px);
-  font-weight: 700;
-  letter-spacing: -0.1em;
-  text-shadow: 0 20px 70px rgba(236, 145, 209, 0.18);
 }
-
+.portfolio-projects .arrow_svg {
+  width: 2em;
+  height: 2em;
+  fill: currentColor;
+  padding-left: 0.2em;
+}
+.portfolio-projects .arrow_svg_3 {
+  width: 1.2em;
+  height: 1.2em;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+/* Target the actual link element containing the text and SVG */
+.portfolio-projects a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em; /* Automatically handles spacing between text and the icon */
+  text-decoration: none; /* Optional: cleans up underlines if needed */
+}
+.portfolio-projects a:hover {
+  display: inline-flex;
+  align-items: center;
+  /* Automatically handles spacing between text and the icon */
+  text-decoration: none; /* Optional: cleans up underlines if needed */
+}
+.portfolio-projects .arrow_down_svg {
+  width: 2em;
+  height: 2em;
+  transform: rotate(90deg);
+  fill: currentColor;
+  padding-left: 0.2em;
+  padding-top: -10em;
+}
+.portfolio-projects .arrow_up_svg {
+  width: 2em;
+  height: 2em;
+  transform: rotate(270deg);
+  fill: currentColor;
+  padding-left: 0.2em;
+  padding-top: -0.3em;
+}
 .portfolio-projects .art-star {
   position: absolute;
   top: 12%;
@@ -199,7 +242,6 @@
   border-radius: 18px;
   background: var(--home-panel);
   box-shadow: none;
-  color: var(--home-ink);
   transition:
     border-color 180ms ease,
     transform 180ms ease;
@@ -209,7 +251,7 @@
   top: 0;
   border-color: rgba(236, 145, 209, 0.52);
   box-shadow: none;
-  color: var(--home-ink);
+
   transform: translateY(-3px);
 }
 
@@ -317,7 +359,6 @@
 .portfolio-projects .project_card article h3 {
   margin: 0;
   padding: 0;
-  color: var(--home-ink);
   font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.04em;
@@ -331,7 +372,6 @@
   > div:first-child
   .project_card_links_placement:first-child
   a {
-  color: var(--home-ink);
   font-size: clamp(24px, 3.5vw, 38px);
   font-weight: 600;
   letter-spacing: -0.05em;
@@ -367,7 +407,6 @@
 
 .portfolio-projects .project_card_links_placement a,
 .portfolio-projects .project_card_link_placement a {
-  color: var(--home-muted);
   font-size: 14px;
   line-height: 1.5;
   text-align: left;
@@ -390,19 +429,6 @@
   justify-content: center;
 }
 
-.portfolio-projects .project_card_links_placement a:hover,
-.portfolio-projects .project_card_link_placement a:hover {
-  color: var(--home-accent);
-}
-
-.portfolio-projects .project_card_links_placement svg,
-.portfolio-projects .project_card_link_placement svg {
-  width: 14px;
-  height: 14px;
-  flex: none;
-  fill: var(--home-accent);
-}
-
 .portfolio-projects .project_card_source_code_links,
 .portfolio-projects button.project_card_source_code_links {
   display: inline-flex;
@@ -411,7 +437,6 @@
   padding: 0;
   border: 0;
   background: transparent;
-  color: var(--home-muted);
   cursor: pointer;
   font-size: 14px;
   text-align: left;
@@ -465,25 +490,24 @@
   position: sticky;
   z-index: 1;
   top: 0;
-  padding: 25px 30px 20px;
   border-bottom: 1px solid var(--home-line);
   background: #211a29;
-  color: var(--home-ink);
   text-align: left;
 }
 
 .portfolio-projects .modal_h2 {
-  margin: 0;
-  color: var(--home-ink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: clamp(22px, 3vw, 32px);
   font-weight: 600;
   letter-spacing: -0.05em;
 }
 
 .portfolio-projects .modal_p {
-  max-width: 600px;
-  margin: 8px 0 15px;
-  color: var(--home-muted);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 12px;
   line-height: 1.7;
 }
@@ -510,28 +534,56 @@
   border-color: var(--home-accent);
   color: var(--home-accent);
 }
+.about-portrait {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+}
+
+.about-portrait::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(23, 19, 28, 0.98) 0%,
+    rgba(23, 19, 28, 0.86) 36%,
+    rgba(23, 19, 28, 0.24) 100%
+  );
+  content: "";
+}
+
+.portrait-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #524253;
+}
+
+.portrait-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
 
 .portfolio-projects .project_hc_card_links_placement {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px 20px;
+  flex-wrap: wrap; /* Allows them to sit side-by-side and wrap only if space runs out */
+  justify-content: center; /* Centers the links horizontally */
+  gap: 15px; /* Clean, even spacing between Dev and Release Candidate */
+  margin: 10px auto 0; /* Removes the heavy left offset percentage */
+  width: 100%;
 }
 
 .portfolio-projects .project_hc_card_link_placement {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-}
-
-.portfolio-projects .project_hc_card_link_placement a {
-  color: var(--home-ink);
-  font-size: 11px;
-}
-
-.portfolio-projects .project_hc_card_link_placement svg {
-  width: 13px;
-  height: 13px;
-  fill: var(--home-accent);
 }
 
 .portfolio-projects .modal-body {
@@ -566,11 +618,6 @@
 
 .portfolio-projects .project_hc_card_band .project_card article {
   padding: 13px;
-}
-
-.portfolio-projects .project_hc_card_link_placement a {
-  color: var(--home-ink);
-  font-size: 10px;
 }
 
 @media (min-width: 901px) {
@@ -736,6 +783,7 @@
 
   .portfolio-projects .art-ring {
     width: min(280px, 72vw);
+    margin-top: 4em;
   }
 
   .portfolio-projects .ring-small {
@@ -743,7 +791,8 @@
   }
 
   .portfolio-projects .code-mark {
-    font-size: 105px;
+    width: min(140px, 45vw);
+    margin-top: 4.5em;
   }
 
   .portfolio-projects .art-caption {
