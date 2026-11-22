@@ -5,6 +5,14 @@
       "path": ".",
     },
     {
+      "name": "assets.hannahcodes.co.uk",
+      "path": "../assets.hannahcodes.co.uk",
+    },
+    {
+      "name": "old.hannahcodes.co.uk",
+      "path": "../old.hannahcodes.co.uk",
+    },
+    {
       "name": "changelog",
       "path": "../changelog",
     },
@@ -17,16 +25,12 @@
       "path": "../adventures-at-pride",
     },
     {
-      "name": "assets.hannahcodes.co.uk",
-      "path": "../assets.hannahcodes.co.uk",
-    },
-    {
-      "name": "old.hannahcodes.co.uk",
-      "path": "../old.hannahcodes.co.uk",
-    },
-    {
       "name": "andoverpridenights.co.uk",
       "path": "../andoverpridenights.co.uk",
+    },
+    {
+      "name": "api.andoverpridenights.co.uk",
+      "path": "../api.andoverpridenights.co.uk",
     },
     {
       "name": "assets.andoverpridenights.co.uk",
